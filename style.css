@@ -515,7 +515,7 @@ ul.xoxo  {
 /* Wir sind wichtiger */
 
 .byuser {
-	background-color: #3399cc;
+	background-color: rgba(200, 200, 225, .6);
 	border: 1px solid rgba(210, 210, 210, .6);
 }
 
