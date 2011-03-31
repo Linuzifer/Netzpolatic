@@ -272,9 +272,11 @@ function childtheme_cc_license() {?>
 <?php }
 
 function childtheme_blogdescription() {
-	$blogdesc = '"blog-description">' . get_bloginfo('description');
-	$akno = 'Wir nutzen <a href="http://www.wordpress.org">Wordpress</a>.<br />Das Design "Netzpolatic" ist ein <a href="http://themeshaper.com/thematic/">Thematic</a>-Kind von <a href="http://www.Linus-Neumann.de">Linus Neumann</a>.';
-	echo "\t\t<div id=$blogdesc<br/><br/>$akno</div>\n\n";
+	$blogdesc = '"blog-description">';
+	// $blogdesc .= get_bloginfo('description');
+	$akno = 'Wir nutzen <a href="http://www.wordpress.org">Wordpress</a>. Das Design ist ein <a href="http://themeshaper.com/thematic/">Thematic</a>-Kind von <a href="http://www.Linus-Neumann.de">Linus Neumann</a>.';
+	$cc = 'Die von uns verfassten Inhalte stehen unter der Lizenz <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/de/">CC BY-NC-SA</a>.';
+	echo "\t\t<div id=$blogdesc $cc<br/>$akno</div>\n\n";
 }
 
 add_action('thematic_aboveheader','childtheme_ads_pagewrapper_open',3);
