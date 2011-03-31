@@ -1,0 +1,862 @@
+/*
+THEME NAME: Netzpolatic
+THEME URI: http://www.Linus-Neumann.de/web
+DESCRIPTION: created for http://www.Netzpolitik.org - requires the Thematic Framework (http://themeshaper.com/thematic/)
+VERSION: 1.0
+AUTHOR: Linus Neumann
+AUTHOR URI: http://www.Linus-Neumann.de
+TEMPLATE: thematic
+TAGS: two columns,fixed width,simple,seo,microformats,widgets,framework,options page,hooks,filters,valid XHTML,valid CSS
+.
+This work, like WordPress, is released under GNU General Public License, version 2 (GPL).
+http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+.
+*/
+
+/* Reset browser defaults */
+@import url('../thematic/library/styles/reset.css');
+/* Apply basic typography styles */
+@import url('../thematic/library/styles/typography.css');
+/* Apply a basic 3 column layout - as we initially planned to use for the page */
+@import url('../thematic/library/layouts/3c-r-fixed.css');
+/* our logo font */
+@font-face { font-family: 'quadraat'; font-style: normal; font-weight: 800; src: local('quadraat'), local('quadraat'), url('fonts/quadratsmallcaps.ttf') format('truetype');
+}
+
+/* GENERELLES */
+
+body {
+	background: #ccc;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+#container {
+	margin:0px;
+	width: 620px;
+}
+
+#wrapper {
+	width: 1125px;
+	max-width: 1125px;
+	margin-left: auto;
+	margin-right: auto ;
+}
+
+#pagewrapper {
+	width: 940px;
+	padding: 0px 10px 0px 10px;
+	float: none;
+	background: white;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: -10px 10px 10px rgba(0, 0, 0, .5);
+	-webkit-box-shadow: -10px 10px 10px rgba(0, 0, 0, .5);
+	-moz-box-shadow: -10px 10px 10px rgba(0, 0, 0, .5);
+	margin-top: 10px;
+}
+
+#main {
+	width: 940px;
+}
+
+.page-template-template-page-fullwidth-php #container {
+	margin:0px;
+	width:960px;
+}
+
+.page-template-template-page-fullwidth-php #content {
+	width:960px;
+}
+
+a {
+	text-decoration: none;
+	color: #3399cc;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: gray;
+}
+
+/* POSITIONIERUNGEN, GRUNDDESIGN */
+
+#blog-title {
+	width: 370px;
+	height: 100px;
+	margin: auto;
+	text-align: center;
+}
+
+#blog-title a, #blog-title a:hover, #blog-title a:active, #blog-title a:visited {
+	color: white;
+}
+
+#blog-description {
+	margin: 20px auto 20px 180px;
+	color: rgba(0,0,0,0.5);
+	width: 600px;
+	text-align: center;
+}
+
+#blog-description a {
+	color: rgba(0,0,0,0.5);
+}
+
+#blog-description a:hover {
+	color: rgba(0,0,0,0.8);
+	text-decoration: none;
+}
+
+#branding {
+	margin-top:10px;
+	width: 940px;
+}
+
+#top {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	margin: 10px 0px 10px 0px;
+	padding: 5px 0px 5px 0px;
+}
+
+#np_navi {
+	text-align: center;	
+	clear: both;
+	width: 400px;
+}
+
+#searchform fieldset {
+	background: #F7F7F7;
+}
+
+#searchform #s {
+	border: 1px solid #CCC;
+	font-size: 12px;
+	width: 240px;
+	height: 17px;
+}
+
+#searchform #searchsubmit {
+	padding: 1px 2px 1px 2px;
+	height: 17px;
+	width: 25px,
+	vertical-align: middle;
+	line-height: 12px;
+	font-size: 12px;
+	background: gray;
+	color: #FFF;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	font-family: quadraat;
+	float: right;
+}
+
+.safari #searchform #searchsubmit {
+	padding: 0px 2px 0px 2px;
+}
+
+.safari #searchform input.text {
+	height: 90px;
+}
+
+#siteinfo{
+    width:960px;
+	min-height: 50px;
+	background: #3399cc url(img/npfooter.gif);
+	background-repeat: no-repeat;
+	background-position: 775px;
+	margin-left:-10px;
+	margin-top: 20px;
+	border-radius: 0px 0px 5px 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+
+#primary {
+    width:300px;
+	position: relative;
+	right: 0px;
+    margin: 0px 0px 0px 15px;
+}
+#secondary {
+    width:300px;
+	position: relative;
+	right: 0px;
+    margin: 0px 0px 0px 5px;
+    clear: right;
+}
+
+/* NAVIGATION (alle) */
+
+a.np_navpunkt {
+	padding: 7px 15px 7px 15px;
+	color: black;
+	text-decoration: none;
+}
+
+a.np_navpunkt:hover {
+	background: #3399cc;
+	color: white;
+	cursor:pointer;
+	text-decoration: none;
+}
+
+div.menu {
+	visibility: hidden;
+}
+
+div.navigation {
+	width: 100%;
+	text-align: center;
+}
+
+.navigation a {
+	color: gray;
+}
+
+.navigation a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+.navigation a:active {
+	color: black;
+	text-decoration: none;
+}
+
+.navigation a:visited {
+	color: gray;
+}
+
+#nav-below {
+}
+
+#nav-below:hover a {
+	color:black;
+}
+
+#nav-below:hover a:hover {
+	color: #3399cc;
+}
+
+/* ÜBERSCHRIFTEN */
+/* in Listen */
+
+.page-title, .entry-title {
+	font-size: 20pt;
+	margin-top: 4px;
+	line-height: 1.1em;
+	font-family: quadraat;
+	border-bottom: 1px solid grey;
+}
+
+.page-title {
+	border: 1px solid grey;
+	margin-bottom: 20px;
+	background-color: #eeeeee;
+	padding: 5px;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#search-terms, #np_authorname, #np_category-title, #np_tag-title, #np_term-title {
+	color: #3399cc;
+}
+
+.entry-title a {
+	color: black;
+}
+
+.entry-title:hover a:hover {
+	color: #3399cc;
+	text-decoration: none;
+}
+
+.entry-title a:active {
+	color: #3399cc;
+	text-decoration: none;
+}
+
+.entry-title a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+/* ENTRY / CONTENT & SO */
+
+.post {
+	margin-bottom: 20px;
+}
+
+.entry-meta, .entry-utility {
+	font-size: 8pt;
+	color: gray;
+	margin: 6px 0px 10px 0px;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	clear: both;
+}
+
+.entry-utility {
+	margin-top: 7px;
+	background-color: #eeeeee;
+	padding: 4px;
+}
+
+.entry-content {
+	font-size: 10pt;
+	line-height: 1.5em;
+}
+
+.entry-content p {
+	margin-bottom: 9px;
+}
+
+
+.entry-meta a, .entry-utility a {
+	color: gray;
+}
+
+.entry-meta:hover, .entry-utility:hover {
+	color: black;
+}
+
+.entry-meta:hover a, .entry-utility:hover a {
+	color: #3399cc;
+}
+
+.entry-content blockquote {
+	background: #eee url(img/quote.gif);
+	background-repeat: no-repeat;
+	background-position: 3px 3px;
+	margin-left: 15px;
+	padding-left: 38px;
+	margin-top: 2px;
+	padding-top: 7px;
+	padding-right: 5px;
+	padding-bottom: 7px;
+	border-top: 1px solid silver;
+	border-bottom: 1px solid silver;
+	padding-bottom: 0px;
+	margin-bottom: 20px;
+	font-style: italic;
+}
+
+.entry-content blockquote:before {
+	/* könnte man ohne Grafik regeln, machen wir aber nicht */
+}
+
+.entry-content blockquote p {
+	margin-bottom: 7px;	
+}
+
+a.more-link {
+	color: red;
+}
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+/* SEITENLEISTEN */
+
+.spli-first, .spli, .spli-last {
+	padding-top: 10px;
+}
+
+.spli-first:hover .sideposts-title a, .spli:hover .sideposts-title a, .spli-last:hover .sideposts-title a{
+	color: #3399cc;
+	text-decoration: none;
+}
+
+.sideposts-title {
+	font-family: quadraat;
+	font-size: 12pt;
+}
+
+.sideposts_date {
+	font-size: 6pt;
+}
+
+.widgetcontainer {
+	color: gray;
+	margin-top: 10px;
+}
+
+.widgetcontainer a {
+	color: gray;
+}
+
+.widgetcontainer:hover {
+	color: black;
+}
+
+.widgetcontainer:hover a {
+	color: black;
+}
+
+.widgetcontainer:hover a:hover {
+	color: #3399cc;
+	text-decoration: none;
+}
+
+.widgettitle {
+	color: black;
+}
+
+ul.xoxo  {
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type: none;
+}
+
+.xoxo li {
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type: none;
+	line-height: 1.5em;
+	margin-bottom: 4px;
+}
+
+.widgetcontainer ul li {
+	list-style-type: none;
+	line-height: 1em;
+	margin-bottom: 4px;
+}
+
+.widgetcontainer ul {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.widgettitle {
+	font-family: quadraat;
+	font-size: 14pt;
+	margin-top: 4px;
+}
+
+/* EINZELSEITE ARTIKEL */
+
+/* Überschriften sind durch .entry-title geregelt, unabhängig von h* */
+
+/* KOMMENTARE */
+
+#comments-list h3 {
+	font-family: quadraat;
+	Font-size: 20px;
+	margin-bottom: 10px;	
+}
+
+.comments h3 {
+}
+
+.comments ol li {
+}
+
+.comments {
+	margin-bottom: 20px;
+}
+
+.editComment, .editableComment, .textComment{
+}
+
+.children {
+}
+
+.depth-1{
+	border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 5px;
+	margin-top: 5px;
+	background-color: rgba(210, 210, 210, .5);
+}
+
+.depth-2{
+	border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin-top: 5px;
+	padding: 5px;
+	background-color: rgba(210, 210, 210, .4);
+}
+
+.depth-3{
+	border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin-top: 5px;
+	padding: 5px;
+	background-color: rgba(210, 210, 210, .6);
+}
+
+/* Wir sind wichtiger */
+
+.byuser {
+	background-color: #3399cc;
+	border: 1px solid rgba(210, 210, 210, .6);
+}
+
+ul.children li {
+	list-style-type: none;
+}
+
+.comment-reply-link {
+	margin: 5px 0px 5px 0px;
+}
+
+.comment-reply-link a:hover {
+	color: red;
+	text-decoration: none;
+}
+
+.comment-reply-link a:hover:after {
+	content:" auf diesen Kommentar";
+}
+
+.comment-author {
+	font-family: quadraat;
+	font-size: 20px;
+	border-bottom: 1px solid black;
+}
+
+.comment-author a {
+	color: black;
+}
+
+.comment-author:hover a {
+	color: #3399cc;
+}
+
+.comment-author:hover a:hover {
+	color: #3399cc;
+	text-decoration: none;
+}
+
+.comment-meta {
+	color: gray;
+	margin: 0px 0px 5px 0px;
+}
+
+.comment-meta a{
+	color: gray;
+}
+
+
+.comment:hover .comment-meta {
+}
+
+.comment-content blockquote {
+	background: #ccc url(img/quote.gif);
+	background-repeat: no-repeat;
+	background-position: 3px 3px;
+	margin-left: 15px;
+	padding-left: 38px;
+	margin-top: 2px;
+	padding-top: 7px;
+	padding-right: 5px;
+	padding-bottom: 7px;
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	padding-bottom: 0px;
+	margin-bottom: 20px;
+	font-style: italic;
+}
+
+.comment-content p {
+}
+
+.comment-meta a {
+}
+
+.comment-meta:hover {
+}
+
+.comment-meta:hover a {
+	color: #3399cc
+}
+
+.comment-meta:hover a:hover {
+	text-decoration: underline;
+}
+
+.comment-reply-link {
+}
+
+.chalt{
+}
+
+#newcomment{
+}
+
+#newcommentsubmit{
+}
+
+.adminreplycomment{
+}
+
+.mvccls{
+}
+
+.unapproved {
+}
+
+#respond {
+	margin-top: 5px;
+	background-color: #eeeeee;
+	padding: 10px;
+	border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+.comments #respond {
+	border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin-top: 5px;
+	padding: 5px;
+	background-color: #DDDDDD;
+	margin-left: 35px;
+}
+
+.depth-1 #respond {
+	border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin-top: 5px;
+	padding: 5px;
+	background-color: #CCCCCC;
+	margin-left: 35px;
+}
+
+#commentform #submit {
+	background-color: gray;
+	border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 5px;
+}
+
+#commentform #submit:hover, #commentform #submit:focus {
+	background-color: #3399cc;
+	color: white;
+	outline: none;
+}
+
+#commentform textarea, #commentform input {
+	background-color: #eee;
+	color: black;
+	border: 1px solid #ccc;
+}
+
+#commentform textarea:focus, #commentform input:focus {
+	background-color: white;
+}
+
+/* TRACKBACKS */
+
+#trackbacks-list {
+	border-bottom: 1px solid black;
+}
+
+#trackbacks-list h3 {
+	font-family: quadraat;
+	Font-size: 20px;
+	margin-bottom: 10px;
+}
+
+#trackbacks-list ol {
+	border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 1px 5px 1px 30px;;
+	background-color: #EEEEEE;
+}
+
+#trackbacks-list ol li {
+	margin:5px 0px 5px 0px;
+	border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 5px;
+	background-color: #DDDDDD;
+}
+
+.pingback .depth-1 {
+	margin: 0px;
+	padding: 0px;
+}
+
+.pingback .comment-author {
+	font-family: Verdana;
+	font-size: 12px;
+	border: none;
+}
+
+.pingback .comment-content,.pingback .comment-content p {
+	margin: 0px;
+	padding: 0px;
+}
+
+.pingback .comment-content p {
+	border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 5px;
+	margin-left: 30px;
+	background-color: #CCCCCC;
+}
+
+#trackbacks-list ol li:hover a {
+	color: #3399cc;
+}
+
+#trackbacks-list div.comment-author {
+}
+
+#trackbacks-list div.comment-content {
+}
+		
+/* Kommentarformular */
+#resond {
+	font-family: quadraat;
+	font-size: 16pt;
+	margin-top: 5px;
+}
+
+#reply-title {
+	font-family: quadraat;
+	font-size: 16pt;
+	margin-top: 5px;
+}
+
+/* Instant-Editing f. Kommentare */
+
+.edit-comment-admin-links-no-icon {
+	margin: -5px 0px 5px 0px;
+	color: gray;
+}
+
+.edit-comment-admin-links-no-icon a {
+	color: gray;
+}
+
+.edit-comment-admin-links-no-icon:hover a {
+	color: #3399cc;
+}
+
+.edit-comment-admin-links-no-icon:hover a:hover {
+	color: #3399cc;
+	text-decoration: underline;
+}
+
+/* Wir sind wichtiger als die anderen */
+
+/* FEATURE / STICKIES */
+
+.sticky {
+	background-color: #eeeeee;
+	padding: 5px;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.sticky h2:before {
+	content:"Feature: ";
+	color: grey;
+}
+
+.sticky:hover h2:before {
+	content:"Feature: ";
+	color: black;
+}
+
+.sticky:hover h2.entry-title:hover a:hover {
+	color: black;
+}
+
+
+/* ADs */
+
+#zeitlogo {
+	background: url(img/zeitkoop.png) top no-repeat;
+	width: 100px;
+	height: 20px;
+	float: right;
+	margin-right: 15px;
+}
+
+#mediumrectangle {
+	float: right;
+}
+
+/* Darf nicht geändert werden, grummel grummel */
+
+#iqdTop {
+		height:100px;
+}
+  
+.center { 
+    width: 1125px;
+    margin: 0px auto;
+}
+
+#p1 {
+    /*float: right;*/
+    padding: 10px 160px 0px 0px;
+    position: relative;
+}
+
+#p1_right {
+    position: absolute;
+    bottom: -610px;
+    left: 970px;
+    width: 160px;
+}
+
+* html #p1_right {
+	right: -20px;
+}
+
+/* SM-BUTTONS */
+
+.wp-flattr-button, .tw_button, .FBConnectButton_Simple {
+	float: left;
+	margin: 0px 5px 0px 5px;
+}
+
+/* AUTOREN-SEITE */
+
+#author-info {
+	border: 1px solid grey;
+	border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 0px 5px 5px 5px;
+	background-color: #EEEEFF;
+	margin: 0px 0px 20px 0px;
+}

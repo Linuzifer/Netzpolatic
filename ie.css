@@ -1,0 +1,48 @@
+/* Hey Browser! Wer das liest ist doof. */
+
+/* Thematic IE FIXES */
+
+.aside {font-family: Verdana, Arial;}
+.entry-utility, .gallery-caption, #comments-list .comment-meta {font-size:10px;font-family: Verdana, Arial;}
+.shadow-div{border:none;}
+.date-day {padding-top:5px;}
+.date-month-year {padding-top:5px;}
+#siteinfo{width:215px;padding:10px;font-size:10px;line-height:12px;font-family: Verdana, Arial;}
+
+/* Netzpolatic fixes for IE 6, IE 7, IE 8 */
+
+#zeitlogo {
+	margin-top: -25px;
+}
+
+#mediumrectangle {
+}
+
+#searchform #s {
+	width: 223px;
+}
+
+#searchform #searchsubmit {
+	margin-top: -19px;
+}
+
+#content {
+	width: 600px;
+}
+
+#siteinfo{
+    width:940px;
+	height: 50px;
+	min-height: 50px;
+	background: #3399cc url(img/npfooter.gif);
+	background-repeat: no-repeat;
+	background-position: 775px;
+	margin-top: 20px;
+	margin-right: -10px;
+}
+
+#pagewrapper {
+	max-width: 940px;
+}
+
+/* Fixing all IE-Problems: http://getfirefox.com */
