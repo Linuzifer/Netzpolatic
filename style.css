@@ -54,10 +54,11 @@ body {
 	background: white;
 	border-radius: 5px 5px 5px 5px;
 	-moz-border-radius: 5px;
+/*
 	-webkit-border-radius: 5px;
-	box-shadow: -10px 10px 10px rgba(0, 0, 0, .5);
 	-webkit-box-shadow: -10px 10px 10px rgba(0, 0, 0, .5);
 	-moz-box-shadow: -10px 10px 10px rgba(0, 0, 0, .5);
+*/
 	margin-top: 10px;
 }
 
@@ -671,6 +672,11 @@ ul.children li {
 	color: black;
 	border: 1px solid #ccc;
 }
+
+#commentform textarea {
+        width: 400px;
+}
+
 
 #commentform textarea:focus, #commentform input:focus {
 	background-color: white;
