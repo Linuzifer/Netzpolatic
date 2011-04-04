@@ -36,6 +36,11 @@ function childtheme_override_postheader_postmeta() {
 	return apply_filters('thematic_postheader_postmeta',$postmeta); 
 }
 
+function childtheme_facebook_meta() { ?>
+    <!-- Hey Facebook! This is our logo: -->
+    <meta property="og:image" content="http://www.netzpolitik.org/wp-content/themes/Netzpolatic/img/logo.png" />
+<?php } 
+add_action('wp_head','childtheme_facebook_meta');
 
 function childtheme_override_blogtitle() { ?>
 	<div id="blog-title"><a href="<?php echo bloginfo('url') ?>/" title="<?php echo bloginfo('name') ?>" rel="home"><img src="<?php echo bloginfo('stylesheet_directory') ?>/img/logo-left.png" alt="<?php echo bloginfo('name') ?>" /></a></div>
