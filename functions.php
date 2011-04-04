@@ -146,18 +146,24 @@ function childtheme_override_content() {
 // Custom, hard-coded Top Navigation
 function childtheme_Netzpolnavi() { ?>
 	<div id="top">
-		<span id="np_navi">
-			<a href="/" class="np_navpunkt">Home</a>
-			<a href="/about-this-blog/" class="np_navpunkt">Über uns</a>
-			<a href="/impressum/" class="np_navpunkt">Kontakt</a>
-			<a href="/category/netzpolitik-podcast/" class="np_navpunkt">Podcast</a>
-			<a href="/category/netzpolitiktv/" class="np_navpunkt">Netzpolitik TV</a>
-			<a href="https://www.facebook.com/netzpolitik" class="np_navpunkt">Facebook</a>
-			<a href="https://www.youtube.com/user/netzpolitik" class="np_navpunkt">Youtube</a>
-			<a href="https://www.twitter.com/Netzpolitik" class="np_navpunkt">Twitter</a>
-			<!-- <a href="/wiki/" class="np_navpunkt">Wiki</a> -->
-			<a href="/feed/" class="np_navpunkt">RSS</a>
-		</span>
+		<ul id="np_navi">
+			<li><a href="/" class="np_navpunkt">Home</a></li>
+			<li><a href="/about-this-blog/" 
+class="np_navpunkt">Über uns</a></li>
+			<li><a href="/impressum/" 
+class="np_navpunkt">Kontakt</a></li>
+			<li><a href="/category/netzpolitik-podcast/" 
+class="np_navpunkt">Podcast</a></li>
+			<li><a href="/category/netzpolitiktv/" 
+class="np_navpunkt">Netzpolitik TV</a></li>
+			<li><a href="https://www.facebook.com/netzpolitik" 
+class="np_navpunkt">Facebook</a></li>
+			<li><a href="https://www.youtube.com/user/netzpolitik" 
+class="np_navpunkt">Youtube</a></li>
+			<li><a href="https://www.twitter.com/Netzpolitik" 
+class="np_navpunkt">Twitter</a></li>
+			<li><a href="/feed/" class="np_navpunkt">RSS</a></li>
+		</ul>
 		<div id="zeitlogo"></div>
 
 	</div>

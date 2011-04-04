@@ -137,10 +137,16 @@ a:visited {
 }
 
 #np_navi {
-	text-align: center;	
-	clear: both;
-	width: 400px;
+	list-style-type: none;
+	display: inline;
+	margin: 0px;
 }
+
+#np_navi li {
+	display: inline;
+	margin: 0px;
+}
+
 
 #searchform fieldset {
 	background: #F7F7F7;
@@ -209,9 +215,13 @@ a:visited {
 /* NAVIGATION (alle) */
 
 a.np_navpunkt {
-	padding: 7px 15px 7px 15px;
+	padding: 6px 15px 7px 15px;
 	color: black;
 	text-decoration: none;
+}
+
+.firefox a.np_navpunkt {
+	padding: 6px 15px 6px 15px;
 }
 
 a.np_navpunkt:hover {
