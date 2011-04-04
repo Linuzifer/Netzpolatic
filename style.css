@@ -882,3 +882,26 @@ ul.children li {
 	background-color: #EEEEFF;
 	margin: 0px 0px 20px 0px;
 }
+
+/* Bilder */
+.alignright {
+	margin: 5px 5px 5px 10px;
+	float:right;
+	clear: right;
+}
+
+.alignleft {
+	margin-right: 5px 10px 5px 5px;
+	float: left;
+	clear: left;
+}
+
+/* Widgets */
+#recentcomments li {
+	margin-bottom: 8px;
+}
+
+#flattr-widget iframe.FlattrButton {
+	float: right;
+	margin-top: -20px;
+}
