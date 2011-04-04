@@ -25,6 +25,7 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
 body {
 	background: #ccc;
+	font-family: Verdana;
 }
 
 * {
@@ -36,6 +37,11 @@ body {
 #container {
 	margin:0px;
 	width: 620px;
+}
+#content {
+  padding-left:15px;
+  padding-right:15px;
+  font-size: 10pt;
 }
 
 #wrapper {
@@ -93,10 +99,9 @@ a:visited {
 /* POSITIONIERUNGEN, GRUNDDESIGN */
 
 #blog-title {
-	width: 370px;
-	height: 100px;
-	margin: auto;
-	text-align: center;
+	width: 420px;
+	padding-left:15px;
+	text-align: left;
 }
 
 #blog-title a, #blog-title a:hover, #blog-title a:active, #blog-title a:visited {
@@ -250,6 +255,17 @@ div.navigation {
 	color:black;
 }
 
+.nav-previous, .nav-next {
+  width:30%;
+}
+
+.nav-next {
+  float:right;
+}
+.nav-previous{
+  float:left;
+}
+
 #nav-below:hover a:hover {
 	color: #3399cc;
 }
@@ -258,15 +274,15 @@ div.navigation {
 /* in Listen */
 
 .page-title, .entry-title {
-	font-size: 20pt;
+	font-size: 1.8em;
 	margin-top: 4px;
 	line-height: 1.1em;
 	font-family: 'PT Serif Caption', arial, serif;
-	border-bottom: 1px solid grey;
+	/*border-bottom: 1px solid grey; */
 }
 
 .page-title {
-	border: 1px solid grey;
+	/*border: 1px solid grey;*/
 	margin-bottom: 20px;
 	background-color: #eeeeee;
 	padding: 5px;
@@ -368,7 +384,7 @@ div.navigation {
 }
 
 a.more-link {
-	color: red;
+	color: #3399CC;
 }
 
 .alignright {
@@ -422,6 +438,7 @@ a.more-link {
 }
 
 .widgettitle {
+	font-size: 18px;
 	color: black;
 	margin-bottom: 5px;
 }
@@ -491,7 +508,7 @@ ul.xoxo  {
 	-moz-border-radius: 5px;
 	padding: 5px;
 	margin-top: 5px;
-	background-color: rgba(210, 210, 210, .5);
+	background-color: rgba(210, 210, 210, .2);
 }
 
 .depth-2{
@@ -500,7 +517,7 @@ ul.xoxo  {
 	-moz-border-radius: 5px;
 	margin-top: 5px;
 	padding: 5px;
-	background-color: rgba(210, 210, 210, .4);
+	background-color: rgba(210, 210, 210, .3);
 }
 
 .depth-3{
@@ -509,7 +526,7 @@ ul.xoxo  {
 	-moz-border-radius: 5px;
 	margin-top: 5px;
 	padding: 5px;
-	background-color: rgba(210, 210, 210, .6);
+	background-color: rgba(210, 210, 210, .4);
 }
 
 /* Wir sind wichtiger */
@@ -850,7 +867,7 @@ ul.children li {
 /* SM-BUTTONS */
 
 .wp-flattr-button, .tw_button, .FBConnectButton_Simple {
-	float: left;
+	float: right;
 	margin: 0px 5px 0px 5px;
 }
 

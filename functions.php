@@ -13,7 +13,7 @@ add_action('init','remove_thematic_actions');
 function childtheme_favicon() { ?>
     <link rel="shortcut icon" href="<?php echo bloginfo('stylesheet_directory') ?>/img/favicon.ico" />
     <!-- Wir nutzen vorrübergehend die Google Font-API und hosten selbst, sobald wir eine Schrift endgültig gewählt haben -->
-    <link href='http://fonts.googleapis.com/css?family=PT+Serif+Caption' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif+Caption' rel='stylesheet' type='text/css' />
 <?php }
 add_action('wp_head', 'childtheme_favicon');
 
@@ -38,7 +38,7 @@ function childtheme_override_postheader_postmeta() {
 
 
 function childtheme_override_blogtitle() { ?>
-	<div id="blog-title"><a href="<?php echo bloginfo('url') ?>/" title="<?php echo bloginfo('name') ?>" rel="home"><img src="<?php echo bloginfo('stylesheet_directory') ?>/img/logo.png" alt="<?php echo bloginfo('name') ?>"></a></span></div>
+	<div id="blog-title"><a href="<?php echo bloginfo('url') ?>/" title="<?php echo bloginfo('name') ?>" rel="home"><img src="<?php echo bloginfo('stylesheet_directory') ?>/img/logo-left.png" alt="<?php echo bloginfo('name') ?>" /></a></div>
 <?php }
 
 add_action('thematic_header','childtheme_override_blogtitle',3); // There seems to be an overriding error in Themativ for _blogtitle
