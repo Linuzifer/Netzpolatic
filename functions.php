@@ -292,6 +292,16 @@ function childtheme_ads_SuBa() { ?>
 			</div>
 		</div> 
 	</div>
+	<script type="text/javascript">
+		place_1 = document.getElementById("place_1");
+		img = place_1.childNodes[3].firstChild;
+		if((img.height + img.width) != 2) {
+			// proper banner detected
+			document.getElementById("wrapper").style.marginTop = '90px';
+		} else {
+			// no banner detected
+		}
+	</script>
 <?php }
 
 function childtheme_cc_license() {?>
@@ -307,9 +317,9 @@ function childtheme_blogdescription() {
 }
 
 add_action('thematic_aboveheader','childtheme_ads_pagewrapper_open',3);
-add_action('thematic_belowfooter','childtheme_ads_pagewrapper_close',1);
-add_action('thematic_belowfooter','childtheme_blogdescription',2);
-add_action('thematic_before','childtheme_ads_SuBa',2);
+add_action('thematic_belowfooter','childtheme_ads_SuBa',1);
+add_action('thematic_belowfooter','childtheme_ads_pagewrapper_close',2);
+add_action('thematic_belowfooter','childtheme_blogdescription',3);
 add_action('wp_head','childtheme_ads_headerinitializer');
 add_action('thematic_betweenmainasides','childtheme_ads_mediumrectangle300x250');
 
