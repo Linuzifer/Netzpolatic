@@ -39,17 +39,99 @@ body {
 }
 
 h1, h2 {
-    font-size: 2em;
-    line-height: 0.75;
-    margin: 0.75em 0;
+	font-size: 2em;
+	line-height: 0.75;
+	margin: 0.75em 0;
 }
 
 h3 {
-    font-size: 1.5em;
-    line-height: 1;
-    margin: 1em 0;
+	font-size: 1.5em;
+	line-height: 1;
+	margin: 1em 0;
 }
 
+
+/* LINKS */
+
+a {
+    border-bottom: 1px solid;
+}
+
+a[href=""]::after {
+    background-color: white;
+    color: red;
+    content: " (Defekter Link)";
+    font-weight: bold;
+}
+
+a:link {
+    color: #204a87;
+    background-color: #ffffff;
+}
+
+a:hover {
+    color: #ffffff;
+    background-color: #3465a4;
+    border-bottom-width: 0px;
+    outline: 2px solid #3465a4;
+}
+
+a:visited {
+    color: #5c3566;
+    background-color: #ffffff;
+}
+
+a:visited:hover {
+    color: #ffffff;
+    background-color: #75507b;
+    border-bottom-width: 0px;
+    outline: 2px solid #75507b;
+}
+
+a:focus {
+    outline: 2px solid #f57900;
+}
+
+a:active {
+    color: #ce5c00;
+    background-color: #ffffff;
+    outline: none;
+}
+
+#blog-title a,
+#blog-title a:visited,
+#blog-title a:hover,
+#blog-title a:focus,
+#blog-title a:active {
+	background-color: white;
+	color: white;
+	outline: none;
+}
+
+h2 > a:link,
+h2 > a:visited,
+a.np_navpunkt:link,
+a.np_navpunkt:visited,
+.aside a:link,
+.aside a:visited {
+	color: #2e3436;
+	background-color: #ffffff;
+}
+
+h2 > a:hover,
+h2 > a:visited:hover,
+a.np_navpunkt:hover,
+a.np_navpunkt:visited:hover,
+.aside a:hover,
+.aside a:visited:hover {
+	color: #ffffff;
+	background-color: #3465a4;
+	outline: 2px solid #3465a4;
+}
+
+a.np_navpunkt {
+	padding: 6px 0.75em 7px 0.75em;
+}
 
 /* LAYOUT & STRUKTUR */
 
@@ -109,22 +191,6 @@ h3 {
 	width:960px;
 }
 
-a {
-	text-decoration: none;
-	color: #3399cc;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-a:active {
-	text-decoration: underline;
-}
-
-a:visited {
-	color: gray;
-}
 
 /* POSITIONIERUNGEN, GRUNDDESIGN */
 
@@ -135,10 +201,6 @@ a:visited {
 	text-align: left;
 }
 
-#blog-title a, #blog-title a:hover, #blog-title a:active, #blog-title a:visited {
-	color: white;
-}
-
 #blog-description {
 	margin: 20px auto 20px 180px;
 	color: rgba(0,0,0,0.5);
@@ -147,12 +209,9 @@ a:visited {
 }
 
 #blog-description a {
-	color: rgba(0,0,0,0.5);
 }
 
 #blog-description a:hover {
-	color: rgba(0,0,0,0.8);
-	text-decoration: none;
 }
 
 #branding {
@@ -228,23 +287,6 @@ a:visited {
 
 /* NAVIGATION (alle) */
 
-a.np_navpunkt {
-	padding: 6px 15px 7px 15px;
-	color: black;
-	text-decoration: none;
-}
-
-.firefox a.np_navpunkt {
-	padding: 6px 15px 6px 15px;
-}
-
-a.np_navpunkt:hover {
-	background: #3399cc;
-	color: white;
-	cursor:pointer;
-	text-decoration: none;
-}
-
 div.menu {
 	visibility: hidden;
 }
@@ -255,28 +297,21 @@ div.navigation {
 }
 
 .navigation a {
-	color: gray;
 }
 
 .navigation a:hover {
-	color: black;
-	text-decoration: none;
 }
 
 .navigation a:active {
-	color: black;
-	text-decoration: none;
 }
 
 .navigation a:visited {
-	color: gray;
 }
 
 #nav-below {
 }
 
 #nav-below:hover a {
-	color:black;
 }
 
 .nav-previous, .nav-next {
@@ -291,7 +326,6 @@ div.navigation {
 }
 
 #nav-below:hover a:hover {
-	color: #3399cc;
 }
 
 /* ÜBERSCHRIFTEN */
@@ -343,24 +377,6 @@ div.navigation {
 	color: #3399cc;
 }
 
-.entry-title a {
-	color: black;
-}
-
-.entry-title:hover a:hover {
-	color: #3399cc;
-	text-decoration: none;
-}
-
-.entry-title a:active {
-	color: #3399cc;
-	text-decoration: none;
-}
-
-.entry-title a:visited {
-	color: black;
-	text-decoration: none;
-}
 
 /* ENTRY / CONTENT & SO */
 
@@ -393,15 +409,12 @@ div.navigation {
 
 
 .entry-meta a, .entry-utility a {
-	color: gray;
 }
 
 .entry-meta:hover, .entry-utility:hover {
-	color: black;
 }
 
 .entry-meta:hover a, .entry-utility:hover a {
-	color: #3399cc;
 }
 
 .entry-content blockquote {
@@ -441,8 +454,6 @@ a.more-link {
 }
 
 .spli-first:hover .sideposts-title a, .spli:hover .sideposts-title a, .spli-last:hover .sideposts-title a{
-	color: #3399cc;
-	text-decoration: none;
 }
 
 .sideposts-title {
@@ -458,7 +469,6 @@ a.more-link {
 }
 
 .widgetcontainer a {
-	color: gray;
 }
 
 .widgetcontainer:hover {
@@ -466,12 +476,9 @@ a.more-link {
 }
 
 .widgetcontainer:hover a {
-	color: black;
 }
 
 .widgetcontainer:hover a:hover {
-	color: #3399cc;
-	text-decoration: none;
 }
 
 .widgettitle {
@@ -579,8 +586,6 @@ ul.children li {
 }
 
 .comment-reply-link a:hover {
-	color: red;
-	text-decoration: none;
 }
 
 .comment-reply-link a:hover:after {
@@ -593,16 +598,12 @@ ul.children li {
 }
 
 .comment-author a {
-	color: black;
 }
 
 .comment-author:hover a {
-	color: #3399cc;
 }
 
 .comment-author:hover a:hover {
-	color: #3399cc;
-	text-decoration: none;
 }
 
 .comment-meta, .edit-comment-admin-links-no-icon {
@@ -611,11 +612,9 @@ ul.children li {
 }
 
 .comment-meta a{
-	color: gray;
 }
 
 .edit-comment-admin-links-no-icon a {
-	color: red;
 }
 
 .comment:hover .comment-meta {
@@ -648,11 +647,9 @@ ul.children li {
 }
 
 .comment-meta:hover a {
-	color: #3399cc
 }
 
 .comment-meta:hover a:hover {
-	text-decoration: underline;
 }
 
 .comment-reply-link {
@@ -787,7 +784,6 @@ ul.children li {
 }
 
 #trackbacks-list ol li:hover a {
-	color: #3399cc;
 }
 
 #trackbacks-list div.comment-author {
@@ -815,16 +811,12 @@ ul.children li {
 }
 
 .edit-comment-admin-links-no-icon a {
-	color: gray;
 }
 
 .edit-comment-admin-links-no-icon:hover a {
-	color: #3399cc;
 }
 
 .edit-comment-admin-links-no-icon:hover a:hover {
-	color: #3399cc;
-	text-decoration: underline;
 }
 
 /* Wir sind wichtiger als die anderen */
@@ -854,7 +846,6 @@ ul.children li {
 }
 
 .sticky:hover h2.entry-title:hover a:hover {
-	color: black;
 }
 
 
