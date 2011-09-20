@@ -55,19 +55,28 @@ h3 {
     margin: 1em 0;
 }
 
+
+/* LAYOUT & STRUKTUR */
+
 #container {
-	margin:0px;
+	float: left;
 	width: 620px;
 }
+
 #content {
-  padding-left:15px;
-  padding-right:15px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
-#content h3, #content h4 {
-	font-weight: bold;
-	margin-top: 20px;
-	margin-bottom: 10px;
+#primary,
+#secondary,
+#mediumrectangle {
+    width: 300px;
+	margin-left: 635px;  /* 620px of #content + padding */
+}
+
+#footer {
+	clear: left;
 }
 
 #wrapper {
@@ -220,20 +229,6 @@ a:visited {
 	-moz-border-radius-bottomright: 5px;
 	-webkit-border-bottom-right-radius: 5px;
 	-webkit-border-bottom-left-radius: 5px;
-}
-
-#primary {
-    width:300px;
-	position: relative;
-	right: 0px;
-    margin: 0px 0px 0px 15px;
-}
-#secondary {
-    width:300px;
-	position: relative;
-	right: 0px;
-    margin: 0px 0px 0px 5px;
-    clear: right;
 }
 
 /* NAVIGATION (alle) */
@@ -876,10 +871,6 @@ ul.children li {
 	height: 20px;
 	float: right;
 	margin-right: 15px;
-}
-
-#mediumrectangle {
-	float: right;
 }
 
 /* Darf nicht geändert werden (als ob) */
