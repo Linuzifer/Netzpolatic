@@ -1,8 +1,5 @@
-<?php
-
-    // Creating the doctype
-    thematic_create_doctype();
-    echo " ";
+<!DOCTYPE html>
+<html <?php
     language_attributes();
     echo ">\n";
     
