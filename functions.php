@@ -256,10 +256,7 @@ switch(get_the_ID())
 	<noscript>
 		<img src="https://zeitonl.ivwbox.de/cgi-bin/ivw/CP/netzpolitik" width="1" height="1" border="0" alt="szmtag" />
 	</noscript>
-	<!-- SZMFRABO VERSION="1.2" -->
-	<script type="text/javascript"> <!-- var szmvars="zeitonl//CP//netzpolitik"; // --> </script>
- 	<script src="https://zeitonl.ivwbox.de/2004/01/survey.js" type="text/javascript"></script>
-	<!--/SZMFRABO-->
+	<!--/SZM-->
 <?php }
 add_action('thematic_header','childtheme_ads_ivwpixel', 1); 
 
