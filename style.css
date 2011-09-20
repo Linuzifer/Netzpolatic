@@ -420,7 +420,7 @@ div.navigation {
 }
 
 .entry-content blockquote:before {
-	/* könnte man ohne Grafik regeln, machen wir aber nicht */
+	/* kÃ¶nnte man ohne Grafik regeln, machen wir aber nicht */
 }
 
 .entry-content blockquote p {
@@ -870,7 +870,7 @@ ul.children li {
 	float: right;
 }
 
-/* Darf nicht geändert werden (als ob) */
+/* Darf nicht geÃ¤ndert werden (als ob) */
 
 #iqdTop {
 	/*	height:100px; */
