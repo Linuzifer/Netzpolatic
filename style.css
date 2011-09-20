@@ -316,24 +316,6 @@ div.navigation {
 	text-align: center;
 }
 
-.navigation a {
-}
-
-.navigation a:hover {
-}
-
-.navigation a:active {
-}
-
-.navigation a:visited {
-}
-
-#nav-below {
-}
-
-#nav-below:hover a {
-}
-
 .nav-previous, .nav-next {
   width:30%;
 }
@@ -354,7 +336,7 @@ div.navigation {
 .page-title, .entry-title {
 	margin-top: 4px;
 	line-height: 1.1em;
-	
+
 	/*border-bottom: 1px solid grey; */
 }
 
@@ -427,16 +409,6 @@ div.navigation {
 	margin-bottom: 9px;
 }
 
-
-.entry-meta a, .entry-utility a {
-}
-
-.entry-meta:hover, .entry-utility:hover {
-}
-
-.entry-meta:hover a, .entry-utility:hover a {
-}
-
 .entry-content blockquote {
 	background: #eee url(img/quote.png);
 	background-repeat: no-repeat;
@@ -459,7 +431,7 @@ div.navigation {
 }
 
 .entry-content blockquote p {
-	margin-bottom: 7px;	
+	margin-bottom: 7px;
 }
 
 a.more-link {
@@ -473,31 +445,9 @@ a.more-link {
 	padding-top: 10px;
 }
 
-.spli-first:hover .sideposts-title a, .spli:hover .sideposts-title a, .spli-last:hover .sideposts-title a{
-}
-
-.sideposts-title {
-}
-
-.sideposts_date {
-}
-
 .widgetcontainer {
 	color: gray;
 	margin-top: 10px;
-}
-
-.widgetcontainer a {
-}
-
-.widgetcontainer:hover {
-	color: black;
-}
-
-.widgetcontainer:hover a {
-}
-
-.widgetcontainer:hover a:hover {
 }
 
 .widgettitle {
@@ -530,32 +480,13 @@ ul.xoxo  {
 	padding-left: 0;
 }
 
-.widgettitle {
-}
 
 /* EINZELSEITE ARTIKEL */
 
-/* Überschriften sind durch .entry-title geregelt, unabhängig von h* */
-
 /* KOMMENTARE */
-
-#comments-list h3 {
-}
-
-.comments h3 {
-}
-
-.comments ol li {
-}
 
 .comments {
 	margin-bottom: 20px;
-}
-
-.editComment, .editableComment, .textComment{
-}
-
-.children {
 }
 
 .depth-1{
@@ -600,9 +531,6 @@ ul.children li {
 	margin: 5px 0px 5px 0px;
 }
 
-.comment-reply-link a:hover {
-}
-
 .comment-reply-link a:hover:after {
 	content:" auf diesen Kommentar";
 }
@@ -612,27 +540,9 @@ ul.children li {
 	border-bottom: 1px solid black;
 }
 
-.comment-author a {
-}
-
-.comment-author:hover a {
-}
-
-.comment-author:hover a:hover {
-}
-
 .comment-meta, .edit-comment-admin-links-no-icon {
 	color: gray;
 	margin: 0px 0px 5px 0px;
-}
-
-.comment-meta a{
-}
-
-.edit-comment-admin-links-no-icon a {
-}
-
-.comment:hover .comment-meta {
 }
 
 .comment-content blockquote {
@@ -650,42 +560,6 @@ ul.children li {
 	padding-bottom: 0px;
 	margin-bottom: 20px;
 	font-style: italic;
-}
-
-.comment-content p {
-}
-
-.comment-meta a {
-}
-
-.comment-meta:hover {
-}
-
-.comment-meta:hover a {
-}
-
-.comment-meta:hover a:hover {
-}
-
-.comment-reply-link {
-}
-
-.chalt{
-}
-
-#newcomment{
-}
-
-#newcommentsubmit{
-}
-
-.adminreplycomment{
-}
-
-.mvccls{
-}
-
-.unapproved {
 }
 
 #respond {
@@ -738,9 +612,8 @@ ul.children li {
 }
 
 #commentform textarea {
-        width: 400px;
+	width: 400px;
 }
-
 
 #commentform textarea:focus, #commentform input:focus {
 	background-color: white;
@@ -750,9 +623,6 @@ ul.children li {
 
 #trackbacks-list {
 	border-bottom: 1px solid black;
-}
-
-#trackbacks-list h3 {
 }
 
 #trackbacks-list ol {
@@ -796,16 +666,9 @@ ul.children li {
 	background-color: #CCCCCC;
 }
 
-#trackbacks-list ol li:hover a {
-}
 
-#trackbacks-list div.comment-author {
-}
-
-#trackbacks-list div.comment-content {
-}
-		
 /* Kommentarformular */
+
 #resond {
 	font-family: "Droid Serif", "Times New Roman", "Times", serif;
 	margin-top: 5px;
@@ -823,16 +686,6 @@ ul.children li {
 	color: gray;
 }
 
-.edit-comment-admin-links-no-icon a {
-}
-
-.edit-comment-admin-links-no-icon:hover a {
-}
-
-.edit-comment-admin-links-no-icon:hover a:hover {
-}
-
-/* Wir sind wichtiger als die anderen */
 
 /* FEATURE / STICKIES */
 
@@ -842,23 +695,6 @@ ul.children li {
 	border-radius: 5px 5px 5px 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-}
-
-.sticky h2:before {
-	/*
-	content:"Aktuell: ";
-	color: grey;
-	*/
-}
-
-.sticky:hover h2:before {
-	/*
-	content:"Aktuell: ";
-	color: black;
-	*/
-}
-
-.sticky:hover h2.entry-title:hover a:hover {
 }
 
 
@@ -875,19 +711,14 @@ ul.children li {
 /* Darf nicht geändert werden (als ob) */
 
 #iqdTop {
-	/*	height:100px; */
 	background-color: transparent;
 	position: absolute;
 	top: 0px;
 }
-  
-.center { 
+
+.center {
     width: 1125px;
     margin: -15px auto;
-}
-
-#p1 {
-    /*float: right;*/
 }
 
 #p1_right {
@@ -900,6 +731,7 @@ ul.children li {
 * html #p1_right {
 	right: -20px;
 }
+
 
 /* SM-BUTTONS */
 
@@ -969,7 +801,7 @@ sub {
 	line-height: 1;
 	vertical-align: baseline;
 	position: relative;
-	
+
 }
 
 sup {
