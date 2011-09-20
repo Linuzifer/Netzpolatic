@@ -186,6 +186,12 @@ a.np_navpunkt:visited:hover {
 	border-bottom-color: transparent;
 }
 
+a > img {
+	display: block;
+	margin-bottom: -1px;
+}
+
+
 /* LAYOUT & STRUKTUR */
 
 #container {
