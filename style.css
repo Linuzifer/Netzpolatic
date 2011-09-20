@@ -54,6 +54,18 @@ h3 {
 	margin: 1em 0;
 }
 
+ol, ul, p {
+	margin-top: 1.5em;
+}
+
+i {
+	font-style: italic;
+}
+
+b {
+	font-style: bold;
+}
+
 
 /* LINKS */
 
