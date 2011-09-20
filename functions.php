@@ -46,7 +46,7 @@ add_action('wp_head','childtheme_facebook_meta');
 
 // Change BlogTitle Display
 function childtheme_override_blogtitle() { ?>
-	<div id="blog-title"><a href="<?php echo bloginfo('url') ?>/" title="<?php echo bloginfo('name') ?>" rel="home"><img src="<?php echo bloginfo('stylesheet_directory') ?>/img/logo-left.png" alt="<?php echo bloginfo('name') ?>" /></a></div>
+	<div id="blog-title"><a href="<?php echo bloginfo('url') ?>/" title="<?php echo bloginfo('name') ?>" rel="home"><img src="<?php echo bloginfo('stylesheet_directory') ?>/img/logo-left.png" alt="<?php echo bloginfo('name') ?>" width="418" height="49"></a></div>
 <?php }
 
 add_action('thematic_header','childtheme_override_blogtitle',3); // There seems to be an overriding error in Themativ for _blogtitle
