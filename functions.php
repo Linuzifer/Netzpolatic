@@ -510,7 +510,7 @@ add_action( 'wp_head','childtheme_rel_canonical',1); // remember to turn off can
 
 function buttons() { ?>
 	<div class="fuckingbuttons">
-	<div class="facebooklikebutton"><a href="http://www.facebook.com/sharer.php?u=<?php the_permalink() ?>&amp;t=<?php the_title(); ?>" target="_blank"><img src="<?php echo bloginfo('stylesheet_directory') ?>/img/like.png"></a></div>
+	<div class="facebooklikebutton"><a href="http://www.facebook.com/sharer.php?u=<?php the_permalink() ?>&amp;t=<?php the_title(); ?>" target="_blank"><img src="<?php echo bloginfo('stylesheet_directory') ?>/img/like.png" height="20" width="84"></a></div>
 	<?
 	if (function_exists('the_flattr_permalink')) { ?> <div class="flattrbutton"><? the_flattr_permalink(); ?></div><? }
 	if (function_exists('tweetbutton')) { echo tweetbutton(); }
