@@ -156,6 +156,10 @@ a.np_navpunkt {
 	margin-left: 635px;  /* 620px of #content + padding */
 }
 
+#main > .ad {
+	min-height: 22.5em;
+}
+
 #footer {
 	clear: left;
 }
@@ -199,9 +203,10 @@ a.np_navpunkt {
 /* POSITIONIERUNGEN, GRUNDDESIGN */
 
 #blog-title {
-	width: 420px;
-	margin-top: 1.5em;
+	margin: 1.5em 0;
+	min-height: 4.5em;
 	text-align: left;
+	width: 420px;
 }
 
 #blog-description {
