@@ -27,11 +27,6 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 	vertical-align: baseline;
 }
 
-/* Apply basic typography styles */
-@import url('../thematic/library/styles/typography.css');
-/* Apply a basic 3 column layout - as we initially planned to use for the page */
-@import url('../thematic/library/layouts/3c-r-fixed.css');
-
 
 /* GENERELLES */
 
