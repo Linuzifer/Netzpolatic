@@ -35,9 +35,12 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 
 /* GENERELLES */
 
+html {
+	font-family: "Droid Sans", Verdana, Arial, Helvetica, sans-serif;
+}
+
 body {
 	background: #ccc;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 #container {
@@ -47,7 +50,6 @@ body {
 #content {
   padding-left:15px;
   padding-right:15px;
-  font-size: 10pt;
 }
 
 #content h3, #content h4 {
@@ -167,7 +169,6 @@ a:visited {
 
 #searchform #s {
 	border: 1px solid #CCC;
-	font-size: 12px;
 	width: 240px;
 	height: 17px;
 }
@@ -177,13 +178,12 @@ a:visited {
 	height: 17px;
 	vertical-align: middle;
 	line-height: 12px;
-	font-size: 12px;
 	background: gray;
 	color: #FFF;
 	border-radius: 5px 5px 5px 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	font-family: 'Times New Roman', 'Times', serif;
+	font-family: "Droid Serif", "Times New Roman", "Times", serif;
 	float: right;
 }
 
@@ -292,14 +292,13 @@ div.navigation {
 	color: #3399cc;
 }
 
-/* ‹BERSCHRIFTEN */
+/* √úBERSCHRIFTEN */
 /* in Listen */
 
 .page-title, .entry-title {
-	font-size: 2em;
 	margin-top: 4px;
 	line-height: 1.1em;
-	font-family: 'Times New Roman', 'Times', serif;
+	font-family: "Droid Serif", "Times New Roman", "Times", serif;
 	/*border-bottom: 1px solid grey; */
 }
 
@@ -368,7 +367,6 @@ div.navigation {
 }
 
 .entry-meta, .entry-utility {
-	font-size: 8pt;
 	color: gray;
 	margin: 6px 0px 10px 0px;
 	border-radius: 5px 5px 5px 5px;
@@ -384,7 +382,6 @@ div.navigation {
 }
 
 .entry-content {
-	font-size: 10pt;
 	line-height: 1.5em;
 }
 
@@ -447,12 +444,10 @@ a.more-link {
 }
 
 .sideposts-title {
-	font-family: 'Times New Roman', 'Times', serif;
-	font-size: 12pt;
+	font-family: "Droid Serif", "Times New Roman", "Times", serif;
 }
 
 .sideposts_date {
-	font-size: 6pt;
 }
 
 .widgetcontainer {
@@ -478,7 +473,6 @@ a.more-link {
 }
 
 .widgettitle {
-	font-size: 18px;
 	color: black;
 	margin-bottom: 5px;
 }
@@ -509,20 +503,18 @@ ul.xoxo  {
 }
 
 .widgettitle {
-	font-family: 'Times New Roman', 'Times', serif;
-	font-size: 14pt;
+	font-family: "Droid Serif", "Times New Roman", "Times", serif;
 	margin-top: 4px;
 }
 
 /* EINZELSEITE ARTIKEL */
 
-/* ‹berschriften sind durch .entry-title geregelt, unabh‰ngig von h* */
+/* √úberschriften sind durch .entry-title geregelt, unabh√§ngig von h* */
 
 /* KOMMENTARE */
 
 #comments-list h3 {
-	font-family: 'Times New Roman', 'Times', serif;
-	Font-size: 20px;
+	font-family: "Droid Serif", "Times New Roman", "Times", serif;
 	margin-bottom: 10px;	
 }
 
@@ -594,8 +586,7 @@ ul.children li {
 }
 
 .comment-author {
-	font-family: 'Times New Roman', 'Times', serif;
-	font-size: 20px;
+	font-family: "Droid Serif", "Times New Roman", "Times", serif;
 	border-bottom: 1px solid black;
 }
 
@@ -748,8 +739,7 @@ ul.children li {
 }
 
 #trackbacks-list h3 {
-	font-family: 'Times New Roman', 'Times', serif;
-	Font-size: 20px;
+	font-family: "Droid Serif", "Times New Roman", "Times", serif;
 	margin-bottom: 10px;
 }
 
@@ -777,7 +767,6 @@ ul.children li {
 
 .pingback .comment-author {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 12px;
 	border: none;
 }
 
@@ -807,14 +796,12 @@ ul.children li {
 		
 /* Kommentarformular */
 #resond {
-	font-family: 'Times New Roman', 'Times', serif;
-	font-size: 16pt;
+	font-family: "Droid Serif", "Times New Roman", "Times", serif;
 	margin-top: 5px;
 }
 
 #reply-title {
-	font-family: 'Times New Roman', 'Times', serif;
-	font-size: 16pt;
+	font-family: "Droid Serif", "Times New Roman", "Times", serif;
 	margin-top: 5px;
 }
 
@@ -1016,20 +1003,18 @@ sub {
 	width: 100px;
 	vertical-align: middle;
 	line-height: 12px;
-	font-size: 12px;
 	background: gray;
 	color: #FFF;
 	border-radius: 5px 5px 5px 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	font-family: 'Times New Roman', 'Times', serif;
+	font-family: "Droid Serif", "Times New Roman", "Times", serif;
 	float: right;
 }
 
 #error404-s {
 	height: 17px;
 	line-height: 12px;
-	font-size: 12px;
 	border-radius: 5px 5px 5px 5px;
 	width: 290px;
 	-moz-border-radius: 5px;
@@ -1039,8 +1024,6 @@ sub {
 
 .error404 ul li {
 	line-height: 20px;
-	font-size: 12px;
 	list-style-type: none;
 	margin-left: 30px;
 }
-
