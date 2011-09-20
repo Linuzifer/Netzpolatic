@@ -36,6 +36,8 @@ html {
 
 body {
 	background: #ccc;
+	margin: 3em 30px;
+	position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -874,25 +876,24 @@ ul.children li {
 
 #iqdTop {
 	/*	height:100px; */
+	background-color: transparent;
 	position: absolute;
-	top: -10px;
+	top: 0px;
 }
   
 .center { 
     width: 1125px;
-    margin: 0px auto;
+    margin: -15px auto;
 }
 
 #p1 {
     /*float: right;*/
-    padding: 10px 160px 0px 0px;
-    position: relative;
 }
 
 #p1_right {
     position: absolute;
-    bottom: -610px;
-    left: 970px;
+    top: 0px;
+    left: 960px;
     width: 160px;
 }
 
