@@ -38,6 +38,10 @@ body {
 	background: #ccc;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Droid Serif", "Times New Roman", "Times", serif;
+}
+
 h1, h2 {
 	font-size: 2em;
 	line-height: 0.75;
@@ -334,7 +338,7 @@ div.navigation {
 .page-title, .entry-title {
 	margin-top: 4px;
 	line-height: 1.1em;
-	font-family: "Droid Serif", "Times New Roman", "Times", serif;
+	
 	/*border-bottom: 1px solid grey; */
 }
 
@@ -457,7 +461,6 @@ a.more-link {
 }
 
 .sideposts-title {
-	font-family: "Droid Serif", "Times New Roman", "Times", serif;
 }
 
 .sideposts_date {
@@ -512,8 +515,6 @@ ul.xoxo  {
 }
 
 .widgettitle {
-	font-family: "Droid Serif", "Times New Roman", "Times", serif;
-	margin-top: 4px;
 }
 
 /* EINZELSEITE ARTIKEL */
@@ -523,8 +524,6 @@ ul.xoxo  {
 /* KOMMENTARE */
 
 #comments-list h3 {
-	font-family: "Droid Serif", "Times New Roman", "Times", serif;
-	margin-bottom: 10px;	
 }
 
 .comments h3 {
@@ -738,8 +737,6 @@ ul.children li {
 }
 
 #trackbacks-list h3 {
-	font-family: "Droid Serif", "Times New Roman", "Times", serif;
-	margin-bottom: 10px;
 }
 
 #trackbacks-list ol {
