@@ -43,6 +43,18 @@ body {
 	background: #ccc;
 }
 
+h1, h2 {
+    font-size: 2em;
+    line-height: 0.75;
+    margin: 0.75em 0;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1;
+    margin: 1em 0;
+}
+
 #container {
 	margin:0px;
 	width: 620px;
