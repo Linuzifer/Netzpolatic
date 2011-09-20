@@ -72,7 +72,34 @@ b {
 /* LINKS */
 
 a {
-    border-bottom: 1px solid;
+	border-bottom: 1px solid;
+	display: inline-block;
+	-moz-transition:
+		border-color .25s ease-in-out,
+		background-color .25s ease-in-out,
+		color .25s ease-in-out,
+		outline-color .25s ease-in-out;
+    -ms-transition:
+		border-color .25s ease-in-out,
+		background-color .25s ease-in-out,
+		color .25s ease-in-out,
+		outline-color .25s ease-in-out;
+    -o-transition:
+		border-color .25s ease-in-out,
+		background-color .25s ease-in-out,
+		color .25s ease-in-out,
+		outline-color .25s ease-in-out;
+	-webkit-transition:
+		border-color .25s ease-in-out,
+		background-color .25s ease-in-out,
+		color .25s ease-in-out,
+		outline-color .25s ease-in-out;
+    transition:
+		border-color .25s ease-in-out,
+		background-color .25s ease-in-out,
+		color .25s ease-in-out,
+		outline-color .25s ease-in-out;
+	outline: 2px solid transparent;
 }
 
 a[href=""]::after {
@@ -90,8 +117,8 @@ a:link {
 a:hover {
     color: #ffffff;
     background-color: #3465a4;
-    border-bottom-width: 0px;
-    outline: 2px solid #3465a4;
+    border-bottom-color: #3465a4;
+    outline-color: #3465a4;
 }
 
 a:visited {
@@ -102,8 +129,8 @@ a:visited {
 a:visited:hover {
     color: #ffffff;
     background-color: #75507b;
-    border-bottom-width: 0px;
-    outline: 2px solid #75507b;
+    border-bottom-color: #75507b;
+    outline-color: #75507b;
 }
 
 a:focus {
@@ -144,11 +171,19 @@ a.np_navpunkt:visited:hover,
 .aside a:visited:hover {
 	color: #ffffff;
 	background-color: #3465a4;
-	outline: 2px solid #3465a4;
+	border-bottom-color: #3465a4;
+	outline-color: #3465a4;
 }
 
 a.np_navpunkt {
 	padding: 6px 0.75em 7px 0.75em;
+}
+
+a.np_navpunkt:link,
+a.np_navpunkt:visited,
+a.np_navpunkt:hover,
+a.np_navpunkt:visited:hover {
+	border-bottom-color: transparent;
 }
 
 /* LAYOUT & STRUKTUR */
@@ -245,12 +280,12 @@ a.np_navpunkt {
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 	margin: 1.5em 0 1.5em 0;
-	padding: 5px 0px 5px 0px;
 }
 
 #np_navi {
 	list-style-type: none;
-	display: inline;
+	display: block;
+	margin: 0;
 }
 
 #np_navi li {
