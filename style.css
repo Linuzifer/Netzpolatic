@@ -280,6 +280,7 @@ a.np_navpunkt:visited:hover {
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 	margin: 1.5em 0 1.5em 0;
+	position: relative;
 }
 
 #np_navi {
@@ -736,11 +737,10 @@ ul.children li {
 /* ADs */
 
 #zeitlogo {
-	background: url(img/zeitkoop.png) top no-repeat;
-	width: 100px;
-	height: 20px;
-	float: right;
-	margin-right: 15px;
+	position: absolute;
+	margin: 5px 0;
+	right: 0;
+	top: 0;
 }
 
 /* Darf nicht geändert werden (als ob) */
