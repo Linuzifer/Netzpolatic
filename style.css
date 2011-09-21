@@ -64,13 +64,42 @@ i, em {
 	font-style: italic;
 }
 
-b, strong {
+b,
+1strong,
+.unapproved {
 	font-style: bold;
 }
 
-small {
+small,
+.entry-meta,
+.entry-utility,
+.comment-meta,
+.comment-reply-link {
 	font-size: 0.75em;
-	line-height: 1.33;
+	line-height: 1.3333;
+}
+
+.entry-meta,
+.entry-utility,
+.comment-meta,
+.comment-reply-link {
+	background-color: #eeeeec;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	clear: both;
+	color: #2e3436;
+	margin: 0 -5px;
+	padding: 0.5em 5px;
+	position: relative;
+}
+
+.entry-meta > :last-child,
+.comment-meta > :last-child {
+	display: block;
+	position: absolute;
+	right: 5px;
+	top: 0.5em;
 }
 
 
@@ -168,12 +197,32 @@ a.np_navpunkt:visited,
 	background-color: #ffffff;
 }
 
+.entry-meta a:link,
+.entry-meta a:visited,
+.entry-utility a:link,
+.entry-utility a:visited,
+.comment-meta a:link,
+.comment-meta a:visited,
+.comment-reply-link a:link,
+.comment-reply-link a:visited {
+	background-color: #eeeeec;
+	color: #2e3436;
+}
+
 h2 > a:hover,
 h2 > a:visited:hover,
 a.np_navpunkt:hover,
 a.np_navpunkt:visited:hover,
 .aside a:hover,
-.aside a:visited:hover {
+.aside a:visited:hover,
+.entry-meta a:hover,
+.entry-meta a:visited:hover,
+.entry-utility a:hover,
+.entry-utility a:visited:hover,
+.comment-meta a:hover,
+.comment-meta a:visited:hover,
+.comment-reply-link a:hover,
+.comment-reply-link a:visited:hover {
 	color: #ffffff;
 	background-color: #3465a4;
 	border-bottom-color: #3465a4;
@@ -380,13 +429,6 @@ div.navigation {
 /* ÜBERSCHRIFTEN */
 /* in Listen */
 
-.page-title, .entry-title {
-	margin-top: 4px;
-	line-height: 1.1em;
-
-	/*border-bottom: 1px solid grey; */
-}
-
 .page-title {
 	/*border: 1px solid grey;*/
 	margin-bottom: 20px;
@@ -428,33 +470,6 @@ div.navigation {
 
 
 /* ENTRY / CONTENT & SO */
-
-.post {
-	margin-bottom: 20px;
-}
-
-.entry-meta, .entry-utility {
-	color: gray;
-	margin: 6px 0px 10px 0px;
-	border-radius: 5px 5px 5px 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	clear: both;
-}
-
-.entry-utility {
-	margin-top: 7px;
-	background-color: #eeeeee;
-	padding: 4px;
-}
-
-.entry-content {
-	line-height: 1.5em;
-}
-
-.entry-content p {
-	margin-bottom: 9px;
-}
 
 .entry-content blockquote {
 	background: #eee url(img/quote.png);
@@ -574,22 +589,9 @@ ul.children li {
 	list-style-type: none;
 }
 
-.comment-reply-link {
-	margin: 5px 0px 5px 0px;
-}
-
-.comment-reply-link a:hover:after {
-	content:" auf diesen Kommentar";
-}
-
 .comment-author {
 	font-family: "Droid Serif", "Times New Roman", "Times", serif;
 	border-bottom: 1px solid black;
-}
-
-.comment-meta, .edit-comment-admin-links-no-icon {
-	color: gray;
-	margin: 0px 0px 5px 0px;
 }
 
 .comment-content blockquote {
