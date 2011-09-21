@@ -12,8 +12,6 @@ add_action('init','remove_thematic_actions');
 //	FavIcon
 function childtheme_favicon() { ?>
     <link rel="shortcut icon" href="/wp-content/themes/Netzpolatic/img/favicon.ico" />
-    <!-- Wir nutzen vorrübergehend die Google Font-API und hosten selbst, sobald wir eine Schrift endgültig gewählt haben -->
-    <link href='https://fonts.googleapis.com/css?family=PT+Serif+Caption' rel='stylesheet' type='text/css' />
 <?php }
 add_action('wp_head', 'childtheme_favicon');
 
