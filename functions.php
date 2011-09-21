@@ -174,7 +174,7 @@ add_action('thematic_header','childtheme_Netzpolnavi', 5);
 
 // var ord is needed for ads later
 function childtheme_ads_headerinitializer() { ?>
-	<script type="text/javascript">
+	<script>
 		var ord = Math.random() * 10000000000000000;
 	</script>
 <?php }
@@ -190,9 +190,9 @@ function childtheme_ads_pagewrapper_close() { ?>
 // skyscraper ad
 function childtheme_ads_skyscraper120x600() { ?>
 	<div class="ad" id="skyscraper">
-	<script type="text/javascript"> 
+	<script> 
 	// <![CDATA[ 		
-	document.write('<script src="https://ad.de.doubleclick.net/adj/netzpolitik.org/rotation;tile=2;sz=120x600;kw=netzpolitik;ord=' + ord + '?" type="text/javascript"><\/script>');
+	document.write('<script src="https://ad.de.doubleclick.net/adj/netzpolitik.org/rotation;tile=2;sz=120x600;kw=netzpolitik;ord=' + ord + '?"><\/script>');
 	// ]]>
 	</script>
 	<noscript><a href="https://ad.de.doubleclick.net/jump/netzpolitik.org/rotation;tile=2;sz=120x600;kw=netzpolitik;ord=123456789?" rel="nofollow"><img src="https://ad.de.doubleclick.net/ad/netzpolitik.org/rotation;tile=2;sz=120x600;kw=netzpolitik;ord=123456789?" width="120" height="600" style="border:none;" alt="" /></a>
@@ -203,9 +203,9 @@ function childtheme_ads_skyscraper120x600() { ?>
 // superbanner ad
 function childtheme_ads_superbanner728x90() { ?>
 	<div class="ad" id="superbanner">
-	<script type="text/javascript"> 
+	<script> 
 	// <![CDATA[ 		
-	document.write('<script src="https://ad.de.doubleclick.net/adj/netzpolitik.org/rotation;dcopt=ist;tile=1;sz=728x90;kw=netzpolitik;ord=' + ord + '?" type="text/javascript"><\/script>');
+	document.write('<script src="https://ad.de.doubleclick.net/adj/netzpolitik.org/rotation;dcopt=ist;tile=1;sz=728x90;kw=netzpolitik;ord=' + ord + '?"><\/script>');
 	// ]]>
 	</script>
 	<noscript><a href="https://ad.de.doubleclick.net/jump/netzpolitik.org/rotation;tile=1;sz=728x90;kw=netzpolitik;ord=123456789?" rel="nofollow"><img src="https://ad.de.doubleclick.net/ad/netzpolitik.org/rotation;tile=1;sz=728x90;kw=netzpolitik;ord=123456789?" width="728" height="90" style="border:none;" alt="" /></a>
@@ -216,9 +216,9 @@ function childtheme_ads_superbanner728x90() { ?>
 // medium rectangle ad
 function childtheme_ads_mediumrectangle300x250() { ?>
 	<div class="ad" id="mediumrectangle">Anzeige<br />
-	<script type="text/javascript"> 
+	<script> 
 	// <![CDATA[ 		
-	document.write('<script src="https://ad.de.doubleclick.net/adj/netzpolitik.org/rotation;tile=8;sz=300x250;kw=netzpolitik;ord=' + ord + '?" type="text/javascript"><\/script>');
+	document.write('<script src="https://ad.de.doubleclick.net/adj/netzpolitik.org/rotation;tile=8;sz=300x250;kw=netzpolitik;ord=' + ord + '?"><\/script>');
 	// ]]>
 	</script>
 	<noscript><a href="https://ad.de.doubleclick.net/jump/netzpolitik.org/rotation;tile=8;sz=300x250;kw=netzpolitik;ord=123456789?" rel="nofollow"><img src="https://ad.de.doubleclick.net/ad/netzpolitik.org/rotation;tile=8;sz=300x250;kw=netzpolitik;ord=123456789?" width="300" height="250" style="border:none;" alt="" /></a>
@@ -245,7 +245,7 @@ switch(get_the_ID())
 }
 ?><!-- SZM VERSION="1.5" -->
 	<!-- Dieses Online-Angebot unterliegt nicht der IVW-Kontrolle! -->
-	<script language="javascript" type="text/javascript">
+	<script>
 		<!--
 		var IVW="<?php echo $ivwurl;?>";
 		document.write('<img src="' + IVW + '?r=' + escape(document.referrer) + '&d=' + (Math.random()*100000) + '" width="1" height="1" border="0" alt="szmtag"/>');
@@ -264,9 +264,9 @@ function childtheme_ads_SuBa() { ?>
 		<div class="center">
 			<div class="ad" id="p1">
 				<div id="place_1">
-					<script type="text/javascript"> 
+					<script> 
 						// <![CDATA[ 		
-						document.write('<script src="https://ad.de.doubleclick.net/adj/netzpolitik.org/rotation;dcopt=ist;tile=1;sz=728x90;kw=netzpolitik;ord=' + ord + '?" type="text/javascript"><\/script>');
+						document.write('<script src="https://ad.de.doubleclick.net/adj/netzpolitik.org/rotation;dcopt=ist;tile=1;sz=728x90;kw=netzpolitik;ord=' + ord + '?"><\/script>');
 					// ]]>
 					</script>
 					<noscript><a href="https://ad.de.doubleclick.net/jump/netzpolitik.org/rotation;tile=1;sz=728x90;kw=netzpolitik;ord=123456789?" rel="nofollow"><img src="https://ad.de.doubleclick.net/ad/netzpolitik.org/rotation;tile=1;sz=728x90;kw=netzpolitik;ord=123456789?" width="728" height="90" style="border:none;" alt="" /></a>
@@ -275,9 +275,9 @@ function childtheme_ads_SuBa() { ?>
 				</div>
 				<div id="p1_right">
 					<div id="place_2">
-						<script type="text/javascript"> 
+						<script> 
 							// <![CDATA[ 		
-							document.write('<script src="https://ad.de.doubleclick.net/adj/netzpolitik.org/rotation;tile=2;sz=120x600;kw=netzpolitik;ord=' + ord + '?" type="text/javascript"><\/script>');
+							document.write('<script src="https://ad.de.doubleclick.net/adj/netzpolitik.org/rotation;tile=2;sz=120x600;kw=netzpolitik;ord=' + ord + '?"><\/script>');
 							// ]]>
 						</script>
 						<noscript><a href="https://ad.de.doubleclick.net/jump/netzpolitik.org/rotation;tile=2;sz=120x600;kw=netzpolitik;ord=123456789?" rel="nofollow"><img src="https://ad.de.doubleclick.net/ad/netzpolitik.org/rotation;tile=2;sz=120x600;kw=netzpolitik;ord=123456789?" width="120" height="600" style="border:none;" alt="" /></a>
@@ -287,7 +287,7 @@ function childtheme_ads_SuBa() { ?>
 			</div>
 		</div> 
 	</div>
-	<script type="text/javascript">
+	<script>
 		place_1 = document.getElementById("place_1");
 		img = place_1.childNodes[3].firstChild;
 		if((img.height + img.width) != 2) {
