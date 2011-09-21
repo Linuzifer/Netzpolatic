@@ -11,15 +11,15 @@ add_action('init','remove_thematic_actions');
 
 //	FavIcon
 function childtheme_favicon() { ?>
-    <link rel="shortcut icon" href="/wp-content/themes/Netzpolatic/img/favicon.ico" />
+	<link rel="shortcut icon" href="/wp-content/themes/Netzpolatic/img/favicon.ico" />
 <?php }
 add_action('wp_head', 'childtheme_favicon');
 
 //	Custom IE Style Sheet
 function childtheme_iefix() { ?>
-    <!--[if lte IE 8]>
+	<!--[if lte IE 8]>
 	<link rel="stylesheet" type="text/css" href="<?php echo bloginfo('stylesheet_directory') ?>/ie.css" />
-    <![endif]-->
+	<![endif]-->
 <?php }
 add_action('wp_head', 'childtheme_iefix');
 
@@ -37,8 +37,8 @@ function childtheme_override_postheader_postmeta() {
 
 // Logos for Facebook and GooglePlus
 function childtheme_facebook_meta() { ?>
-    <!-- Hey Facebook and Google plus! This is our logo: -->
-     <link rel="image_src" href="https://www.netzpolitik.org/wp-content/themes/Netzpolatic/img/SNlogo.png" />
+	<!-- Hey Facebook and Google plus! This is our logo: -->
+	<link rel="image_src" href="https://www.netzpolitik.org/wp-content/themes/Netzpolatic/img/SNlogo.png" />
 <?php }
 add_action('wp_head','childtheme_facebook_meta');
 
@@ -91,7 +91,7 @@ function childtheme_override_page_title() {
 			$content .= __(thematic_tag_query());
 			$content .= '</span></h1>';
 	} elseif (is_tax()) {
-		    global $taxonomy;
+			global $taxonomy;
 			$content .= '<h1 class="page-title">';
 			$tax = get_taxonomy($taxonomy);
 			$content .= $tax->labels->name . ' ';
@@ -230,18 +230,18 @@ function childtheme_ads_mediumrectangle300x250() { ?>
 function childtheme_ads_ivwpixel() {
 switch(get_the_ID())
 	{
-    case '751';
+	case '751';
 		$ivwurl="https://zeitonl.ivwbox.de/cgi-bin/ivw/CP/netzpolitik/ueber";
 		break;
-    case '752';
+	case '752';
 		$ivwurl="https://zeitonl.ivwbox.de/cgi-bin/ivw/CP/netzpolitik/impressum";
 		break;
-    case '7852';
-        $ivwurl="https://zeitonl.ivwbox.de/cgi-bin/ivw/CP/netzpolitik/werbung";
-    	break;
-    default;
-        $ivwurl="https://zeitonl.ivwbox.de/cgi-bin/ivw/CP/netzpolitik";
-    break;
+	case '7852';
+		$ivwurl="https://zeitonl.ivwbox.de/cgi-bin/ivw/CP/netzpolitik/werbung";
+		break;
+	default;
+		$ivwurl="https://zeitonl.ivwbox.de/cgi-bin/ivw/CP/netzpolitik";
+	break;
 }
 ?><!-- SZM VERSION="1.5" -->
 	<!-- Dieses Online-Angebot unterliegt nicht der IVW-Kontrolle! -->
@@ -339,53 +339,53 @@ function childtheme_override_404_content() { ?>
 /* Schema.org */
 /* Schema.org author on single posts */
 function childtheme_override_postmeta_authorlink() {
-	    global $authordata;
+		global $authordata;
 
-	    $authorlink = '<span class="meta-prep meta-prep-author">' . __('By ', 'thematic') . '</span>';
-	    if (is_single()) {
-	    $authorlink .= '<span class="author vcard" itemprop="author">'. '<a rel="author" class="url fn n" href="';
-	    } else {
-	    $authorlink .= '<span class="author vcard">'. '<a class="url fn n" href="';
-	    }
-	    $authorlink .= get_author_posts_url($authordata->ID, $authordata->user_nicename);
-	    $authorlink .= '" title="' . __('View all posts by ', 'thematic') . get_the_author_meta( 'display_name' ) . '">';
-	    $authorlink .= get_the_author_meta( 'display_name' );
-	    $authorlink .= '</a></span>';
+		$authorlink = '<span class="meta-prep meta-prep-author">' . __('By ', 'thematic') . '</span>';
+		if (is_single()) {
+		$authorlink .= '<span class="author vcard" itemprop="author">'. '<a rel="author" class="url fn n" href="';
+		} else {
+		$authorlink .= '<span class="author vcard">'. '<a class="url fn n" href="';
+		}
+		$authorlink .= get_author_posts_url($authordata->ID, $authordata->user_nicename);
+		$authorlink .= '" title="' . __('View all posts by ', 'thematic') . get_the_author_meta( 'display_name' ) . '">';
+		$authorlink .= get_the_author_meta( 'display_name' );
+		$authorlink .= '</a></span>';
 
-	    return apply_filters('thematic_post_meta_authorlink', $authorlink);
+		return apply_filters('thematic_post_meta_authorlink', $authorlink);
 
 }
 
 /* Schema.org headline on single posts */
 function childtheme_override_postheader_posttitle() {
-	    if (is_single() || is_page()) {
-	        $posttitle = '<h1 itemprop="headline" class="entry-title">' . get_the_title() . "</h1>\n";
-	    } elseif (is_404()) {
-	        $posttitle = '<h1 class="entry-title">' . __('Not Found', 'thematic') . "</h1>\n";
-	    } else {
-	        $posttitle = '<h2 class="entry-title"><a href="';
-	        $posttitle .= apply_filters('the_permalink', get_permalink());
-	        $posttitle .= '" title="';
-	        $posttitle .= __('Permalink to ', 'thematic') . the_title_attribute('echo=0');
-	        $posttitle .= '" rel="bookmark">';
-	        $posttitle .= get_the_title();
-	        $posttitle .= "</a></h2>\n";
-	    }
+		if (is_single() || is_page()) {
+			$posttitle = '<h1 itemprop="headline" class="entry-title">' . get_the_title() . "</h1>\n";
+		} elseif (is_404()) {
+			$posttitle = '<h1 class="entry-title">' . __('Not Found', 'thematic') . "</h1>\n";
+		} else {
+			$posttitle = '<h2 class="entry-title"><a href="';
+			$posttitle .= apply_filters('the_permalink', get_permalink());
+			$posttitle .= '" title="';
+			$posttitle .= __('Permalink to ', 'thematic') . the_title_attribute('echo=0');
+			$posttitle .= '" rel="bookmark">';
+			$posttitle .= get_the_title();
+			$posttitle .= "</a></h2>\n";
+		}
 
-	    return apply_filters('thematic_postheader_posttitle',$posttitle);
+		return apply_filters('thematic_postheader_posttitle',$posttitle);
 
 }
 
 /* Schema.org datePublished on single posts */
 function childtheme_override_postmeta_entrydate() {
-	    $entrydate = '<span class="meta-prep meta-prep-entry-date">' . __('Published: ', 'thematic') . '</span>';
-	    if (is_single()) {
-	    $entrydate .= '<span class="entry-date"><time itemprop="datePublished" datetime="' . get_the_time('Y-m-d') . 'T' . get_the_time('G:i') . '">' . get_the_time('d.m.Y') . ' um ' . get_the_time('G:i') . 'h</time></span>';
-	    } else {
-	    $entrydate .= '<span class="entry-date">' . get_the_time('d.m.Y') . ' um ' . get_the_time('G:i') . 'h' . '</span>';
-	    }
+		$entrydate = '<span class="meta-prep meta-prep-entry-date">' . __('Published: ', 'thematic') . '</span>';
+		if (is_single()) {
+		$entrydate .= '<span class="entry-date"><time itemprop="datePublished" datetime="' . get_the_time('Y-m-d') . 'T' . get_the_time('G:i') . '">' . get_the_time('d.m.Y') . ' um ' . get_the_time('G:i') . 'h</time></span>';
+		} else {
+		$entrydate .= '<span class="entry-date">' . get_the_time('d.m.Y') . ' um ' . get_the_time('G:i') . 'h' . '</span>';
+		}
 
-	    return apply_filters('thematic_post_meta_entrydate', $entrydate);
+		return apply_filters('thematic_post_meta_entrydate', $entrydate);
 
 }
 
@@ -403,7 +403,7 @@ function childtheme_override_single_post() {
 						thematic_post_class();
 						echo '">';
 					}
-     				thematic_postheader(); ?>
+	 				thematic_postheader(); ?>
 					<div class="entry-content" itemprop="articleBody">
 <?php thematic_content(); ?>
 
@@ -419,61 +419,61 @@ function childtheme_override_single_post() {
 
 /* Schema.org articleSection (Category) on single posts */
 function childtheme_override_postfooter_postcategory() {
-	    $postcategory = '<span class="cat-links">';
-	    if (is_single()) {
-	        $postcategory .= __('This entry was posted in ', 'thematic') . '<span itemprop="articleSection">' . get_the_category_list('</span>, <span itemprop="articleSection">');
-	        $postcategory .= '</span></span>';
-	    } elseif ( is_category() && $cats_meow = thematic_cats_meow(', ') ) { /* Returns categories other than the one queried */
-	        $postcategory .= __('Also posted in ', 'thematic') . $cats_meow;
-	        $postcategory .= '</span> <span class="meta-sep meta-sep-tag-links">|</span>';
-	    } else {
-	        $postcategory .= __('Posted in ', 'thematic') . get_the_category_list(', ');
-	        $postcategory .= '</span> <span class="meta-sep meta-sep-tag-links">|</span>';
-	    }
-	    return apply_filters('thematic_postfooter_postcategory',$postcategory);
+		$postcategory = '<span class="cat-links">';
+		if (is_single()) {
+			$postcategory .= __('This entry was posted in ', 'thematic') . '<span itemprop="articleSection">' . get_the_category_list('</span>, <span itemprop="articleSection">');
+			$postcategory .= '</span></span>';
+		} elseif ( is_category() && $cats_meow = thematic_cats_meow(', ') ) { /* Returns categories other than the one queried */
+			$postcategory .= __('Also posted in ', 'thematic') . $cats_meow;
+			$postcategory .= '</span> <span class="meta-sep meta-sep-tag-links">|</span>';
+		} else {
+			$postcategory .= __('Posted in ', 'thematic') . get_the_category_list(', ');
+			$postcategory .= '</span> <span class="meta-sep meta-sep-tag-links">|</span>';
+		}
+		return apply_filters('thematic_postfooter_postcategory',$postcategory);
 }
 
 /* Schema.org Keywords (Tags) on single posts */
 function childtheme_override_postfooter_posttags() {
 
-	    if (is_single()) {
-	        $tagtext = __(' and tagged', 'thematic');
-	        $posttags = get_the_tag_list("<span class=\"tag-links\"> $tagtext <span itemprop=\"keywords\">",', ','</span></span>');
-	    } elseif ( is_tag() && $tag_ur_it = thematic_tag_ur_it(', ') ) { /* Returns tags other than the one queried */
-	        $posttags = '<span class="tag-links">' . __(' Also tagged ', 'thematic') . $tag_ur_it . '</span> <span class="meta-sep meta-sep-comments-link">|</span>';
-	    } else {
-	        $tagtext = __('Tagged', 'thematic');
-	        $posttags = get_the_tag_list("<span class=\"tag-links\"> $tagtext ",', ','</span> <span class="meta-sep meta-sep-comments-link">|</span>');
-	    }
-	    return apply_filters('thematic_postfooter_posttags',$posttags);
+		if (is_single()) {
+			$tagtext = __(' and tagged', 'thematic');
+			$posttags = get_the_tag_list("<span class=\"tag-links\"> $tagtext <span itemprop=\"keywords\">",', ','</span></span>');
+		} elseif ( is_tag() && $tag_ur_it = thematic_tag_ur_it(', ') ) { /* Returns tags other than the one queried */
+			$posttags = '<span class="tag-links">' . __(' Also tagged ', 'thematic') . $tag_ur_it . '</span> <span class="meta-sep meta-sep-comments-link">|</span>';
+		} else {
+			$tagtext = __('Tagged', 'thematic');
+			$posttags = get_the_tag_list("<span class=\"tag-links\"> $tagtext ",', ','</span> <span class="meta-sep meta-sep-comments-link">|</span>');
+		}
+		return apply_filters('thematic_postfooter_posttags',$posttags);
 
 }
 
 /* Schema.org publisher on single posts */
 function childtheme_override_postfooter_postconnect() {
-	    $postconnect = __('. Bookmark the ', 'thematic') . '<a href="' . apply_filters('the_permalink', get_permalink()) . '" title="' . __('Permalink to ', 'thematic') . the_title_attribute('echo=0') . '">';
-	    $postconnect .= __('permalink', 'thematic') . '</a>.';
-	    if ((comments_open()) && (pings_open())) { /* Comments are open */
-	        $postconnect .= ' <a class="comment-link" href="#respond" title ="' . __('Post a comment', 'thematic') . '">' . __('Post a comment', 'thematic') . '</a>';
-	        $postconnect .= __(' or leave a trackback: ', 'thematic');
-	        $postconnect .= '<a class="trackback-link" href="' . get_trackback_url() . '" title ="' . __('Trackback URL for your post', 'thematic') . '" rel="trackback">' . __('Trackback URL', 'thematic') . '</a>.';
-	    } elseif (!(comments_open()) && (pings_open())) { /* Only trackbacks are open */
-	        $postconnect .= __(' Comments are closed, but you can leave a trackback: ', 'thematic');
-	        $postconnect .= '<a class="trackback-link" href="' . get_trackback_url() . '" title ="' . __('Trackback URL for your post', 'thematic') . '" rel="trackback">' . __('Trackback URL', 'thematic') . '</a>.';
-	    } elseif ((comments_open()) && !(pings_open())) { /* Only comments open */
-	        $postconnect .= __(' Trackbacks are closed, but you can ', 'thematic');
-	        $postconnect .= '<a class="comment-link" href="#respond" title ="' . __('Post a comment', 'thematic') . '">' . __('post a comment', 'thematic') . '</a>.';
-	    } elseif (!(comments_open()) && !(pings_open())) { /* Comments and trackbacks closed */
-	        $postconnect .= __(' Both comments and trackbacks are currently closed.', 'thematic');
-	    }
-	    if (is_single()) {
-	    $postconnect .= ' Dieser Beitrag steht unter der Lizenz <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/de/">CC BY-NC-SA</a>: ' . get_the_author_meta( 'display_name' ) . ', <span itemprop="publisher">Netzpolitik.org</span>.';
+		$postconnect = __('. Bookmark the ', 'thematic') . '<a href="' . apply_filters('the_permalink', get_permalink()) . '" title="' . __('Permalink to ', 'thematic') . the_title_attribute('echo=0') . '">';
+		$postconnect .= __('permalink', 'thematic') . '</a>.';
+		if ((comments_open()) && (pings_open())) { /* Comments are open */
+			$postconnect .= ' <a class="comment-link" href="#respond" title ="' . __('Post a comment', 'thematic') . '">' . __('Post a comment', 'thematic') . '</a>';
+			$postconnect .= __(' or leave a trackback: ', 'thematic');
+			$postconnect .= '<a class="trackback-link" href="' . get_trackback_url() . '" title ="' . __('Trackback URL for your post', 'thematic') . '" rel="trackback">' . __('Trackback URL', 'thematic') . '</a>.';
+		} elseif (!(comments_open()) && (pings_open())) { /* Only trackbacks are open */
+			$postconnect .= __(' Comments are closed, but you can leave a trackback: ', 'thematic');
+			$postconnect .= '<a class="trackback-link" href="' . get_trackback_url() . '" title ="' . __('Trackback URL for your post', 'thematic') . '" rel="trackback">' . __('Trackback URL', 'thematic') . '</a>.';
+		} elseif ((comments_open()) && !(pings_open())) { /* Only comments open */
+			$postconnect .= __(' Trackbacks are closed, but you can ', 'thematic');
+			$postconnect .= '<a class="comment-link" href="#respond" title ="' . __('Post a comment', 'thematic') . '">' . __('post a comment', 'thematic') . '</a>.';
+		} elseif (!(comments_open()) && !(pings_open())) { /* Comments and trackbacks closed */
+			$postconnect .= __(' Both comments and trackbacks are currently closed.', 'thematic');
 		}
-	    // Display edit link on single posts
-	    if (current_user_can('edit_posts')) {
-	        $postconnect .= ' ' . thematic_postfooter_posteditlink();
-	    }
-	    return apply_filters('thematic_postfooter_postconnect',$postconnect);
+		if (is_single()) {
+		$postconnect .= ' Dieser Beitrag steht unter der Lizenz <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/de/">CC BY-NC-SA</a>: ' . get_the_author_meta( 'display_name' ) . ', <span itemprop="publisher">Netzpolitik.org</span>.';
+		}
+		// Display edit link on single posts
+		if (current_user_can('edit_posts')) {
+			$postconnect .= ' ' . thematic_postfooter_posteditlink();
+		}
+		return apply_filters('thematic_postfooter_postconnect',$postconnect);
 
 }
 
@@ -515,24 +515,24 @@ function buttons() { ?>
 
 function childtheme_override_postfooter() {
 
-    global $id, $post;
+	global $id, $post;
 
-    if ($post->post_type == 'page' && current_user_can('edit_posts')) { /* For logged-in "page" search results */
-        $postfooter = '<div class="entry-utility">' . buttons() . thematic_postfooter_posteditlink();
-        $postfooter .= "</div><!-- .entry-utility -->\n";
-    } elseif ($post->post_type == 'page') { /* For logged-out "page" search results */
-        $postfooter = buttons();
-    } else {
-        if (is_single()) {
-            $postfooter = '<div class="entry-utility">' . buttons() . thematic_postfooter_postcategory() . thematic_postfooter_posttags() . thematic_postfooter_postconnect();
-        } else {
-            $postfooter = '<div class="entry-utility">' . buttons() . thematic_postfooter_postcategory() . thematic_postfooter_posttags() . thematic_postfooter_postcomments();
-        }
-        $postfooter .= "</div><!-- .entry-utility -->\n";
-    }
+	if ($post->post_type == 'page' && current_user_can('edit_posts')) { /* For logged-in "page" search results */
+		$postfooter = '<div class="entry-utility">' . buttons() . thematic_postfooter_posteditlink();
+		$postfooter .= "</div><!-- .entry-utility -->\n";
+	} elseif ($post->post_type == 'page') { /* For logged-out "page" search results */
+		$postfooter = buttons();
+	} else {
+		if (is_single()) {
+			$postfooter = '<div class="entry-utility">' . buttons() . thematic_postfooter_postcategory() . thematic_postfooter_posttags() . thematic_postfooter_postconnect();
+		} else {
+			$postfooter = '<div class="entry-utility">' . buttons() . thematic_postfooter_postcategory() . thematic_postfooter_posttags() . thematic_postfooter_postcomments();
+		}
+		$postfooter .= "</div><!-- .entry-utility -->\n";
+	}
 
-    // Put it on the screen
-    echo apply_filters( 'thematic_postfooter', $postfooter ); // Filter to override default post footer
+	// Put it on the screen
+	echo apply_filters( 'thematic_postfooter', $postfooter ); // Filter to override default post footer
 }
 
 ?>

@@ -113,12 +113,12 @@ a {
 		background-color .25s ease-in-out,
 		color .25s ease-in-out,
 		outline-color .25s ease-in-out;
-    -ms-transition:
+	-ms-transition:
 		border-color .25s ease-in-out,
 		background-color .25s ease-in-out,
 		color .25s ease-in-out,
 		outline-color .25s ease-in-out;
-    -o-transition:
+	-o-transition:
 		border-color .25s ease-in-out,
 		background-color .25s ease-in-out,
 		color .25s ease-in-out,
@@ -128,7 +128,7 @@ a {
 		background-color .25s ease-in-out,
 		color .25s ease-in-out,
 		outline-color .25s ease-in-out;
-    transition:
+	transition:
 		border-color .25s ease-in-out,
 		background-color .25s ease-in-out,
 		color .25s ease-in-out,
@@ -137,44 +137,44 @@ a {
 }
 
 a[href=""]::after {
-    background-color: white;
-    color: red;
-    content: " (Defekter Link)";
-    font-weight: bold;
+	background-color: white;
+	color: red;
+	content: " (Defekter Link)";
+	font-weight: bold;
 }
 
 a:link {
-    color: #204a87;
-    background-color: #ffffff;
+	color: #204a87;
+	background-color: #ffffff;
 }
 
 a:hover {
-    color: #ffffff;
-    background-color: #3465a4;
-    border-bottom-color: #3465a4;
-    outline-color: #3465a4;
+	color: #ffffff;
+	background-color: #3465a4;
+	border-bottom-color: #3465a4;
+	outline-color: #3465a4;
 }
 
 a:visited {
-    color: #5c3566;
-    background-color: #ffffff;
+	color: #5c3566;
+	background-color: #ffffff;
 }
 
 a:visited:hover {
-    color: #ffffff;
-    background-color: #75507b;
-    border-bottom-color: #75507b;
-    outline-color: #75507b;
+	color: #ffffff;
+	background-color: #75507b;
+	border-bottom-color: #75507b;
+	outline-color: #75507b;
 }
 
 a:focus {
-    outline: 2px solid #f57900;
+	outline: 2px solid #f57900;
 }
 
 a:active {
-    color: #ce5c00;
-    background-color: #ffffff;
-    outline: none;
+	color: #ce5c00;
+	background-color: #ffffff;
+	outline: none;
 }
 
 #blog-title a,
@@ -261,7 +261,7 @@ a > img {
 #primary,
 #secondary,
 #mediumrectangle {
-    width: 300px;
+	width: 300px;
 	margin-left: 635px;  /* 620px of #content + padding */
 }
 
@@ -387,7 +387,7 @@ a > img {
 }
 
 #siteinfo{
-    width:960px;
+	width:960px;
 	min-height: 50px;
 	background: #3399cc url(img/npfooter.png);
 	background-repeat: no-repeat;
@@ -765,15 +765,15 @@ ul.children li {
 }
 
 .center {
-    width: 1125px;
-    margin: -15px auto;
+	width: 1125px;
+	margin: -15px auto;
 }
 
 #p1_right {
-    position: absolute;
-    top: 0px;
-    left: 960px;
-    width: 160px;
+	position: absolute;
+	top: 0px;
+	left: 960px;
+	width: 160px;
 }
 
 * html #p1_right {

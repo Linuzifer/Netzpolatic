@@ -1,34 +1,34 @@
 
-    </div><!-- #main -->
+	</div><!-- #main -->
 
-    <?php
+	<?php
 
-    // action hook for placing content above the footer
-    thematic_abovefooter();
+	// action hook for placing content above the footer
+	thematic_abovefooter();
 
-    ?>
+	?>
 
 	<div id="footer">
 
-        <?php
+		<?php
 
-        // action hook creating the footer
-        thematic_footer();
+		// action hook creating the footer
+		thematic_footer();
 
-        ?>
+		?>
 
 	</div><!-- #footer -->
 
-    <?php
+	<?php
 
-    // action hook for placing content below the footer
-    thematic_belowfooter();
+	// action hook for placing content below the footer
+	thematic_belowfooter();
 
-    if (apply_filters('thematic_close_wrapper', true)) {
-    	echo '</div><!-- #wrapper .hfeed -->';
-    }
+	if (apply_filters('thematic_close_wrapper', true)) {
+		echo '</div><!-- #wrapper .hfeed -->';
+	}
 
-    ?>
+	?>
 
 <?php
 

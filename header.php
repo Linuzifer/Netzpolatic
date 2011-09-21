@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html <?php
-    language_attributes();
-    echo ">\n";
+	language_attributes();
+	echo ">\n";
 
-    // Creating the head profile
-    thematic_head_profile();
+	// Creating the head profile
+	thematic_head_profile();
 
-    // Creating the doc title
-    thematic_doctitle();
+	// Creating the doc title
+	thematic_doctitle();
 
-    // Creating the content type
-    thematic_create_contenttype();
+	// Creating the content type
+	thematic_create_contenttype();
 
-    // Creating the description
-    thematic_show_description();
+	// Creating the description
+	thematic_show_description();
 
-    // Creating the robots tags
-    thematic_show_robots();
+	// Creating the robots tags
+	thematic_show_robots();
 
-    // Creating the canonical URL
-    // temporarily removed because some fucking plugin is writing one although it is not supposed to.
-    // thematic_canonical_url();
+	// Creating the canonical URL
+	// temporarily removed because some fucking plugin is writing one although it is not supposed to.
+	// thematic_canonical_url();
 
-    // Loading the stylesheet
-    thematic_create_stylesheet();
+	// Loading the stylesheet
+	thematic_create_stylesheet();
 
 	if (THEMATIC_COMPATIBLE_FEEDLINKS) {
-    	// Creating the internal RSS links
-    	thematic_show_rss();
+		// Creating the internal RSS links
+		thematic_show_rss();
 
-    	// Creating the comments RSS links
-    	thematic_show_commentsrss();
+		// Creating the comments RSS links
+		thematic_show_commentsrss();
    	}
 
-    // Creating the pingback adress
-    thematic_show_pingback();
+	// Creating the pingback adress
+	thematic_show_pingback();
 
-    // Enables comment threading
-    thematic_show_commentreply();
+	// Enables comment threading
+	thematic_show_commentreply();
 
-    // Calling WordPress' header action hook
-    wp_head();
+	// Calling WordPress' header action hook
+	wp_head();
 
 ?>
 
@@ -57,26 +57,26 @@ if (apply_filters('thematic_open_wrapper', true)) {
 	echo '<div id="wrapper" class="hfeed">';
 }
 
-    // action hook for placing content above the theme header
-    thematic_aboveheader();
+	// action hook for placing content above the theme header
+	thematic_aboveheader();
 
-    ?>
+	?>
 
-    <div id="header">
+	<div id="header">
 
-        <?php
+		<?php
 
-        // action hook creating the theme header
-        thematic_header();
+		// action hook creating the theme header
+		thematic_header();
 
-        ?>
+		?>
 
 	</div><!-- #header-->
-    <?php
+	<?php
 
-    // action hook for placing content below the theme header
-    thematic_belowheader();
+	// action hook for placing content below the theme header
+	thematic_belowheader();
 
-    ?>
-    <div id="main">
+	?>
+	<div id="main">
 
