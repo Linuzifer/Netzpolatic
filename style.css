@@ -31,7 +31,7 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 /* GENERELLES */
 
 html {
-	font-family: "Droid Sans", Verdana, Arial, Helvetica, sans-serif;
+	font-family: "Liberation Sans", "Helvetica", "Arial", sans-serif;
 }
 
 body {
@@ -41,7 +41,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Droid Serif", "Times New Roman", "Times", serif;
+	font-family: "Liberation Serif", "Times New Roman", "Times", serif;
 }
 
 h1, h2 {
