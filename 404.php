@@ -11,17 +11,17 @@
 ?>
 
 		<div id="container">
-		
+
 			<?php thematic_abovecontent(); ?>
-		
+
 			<div id="content">
-			
+
 				<?php thematic_abovepost(); ?>
-		
+
 				<div id="post-0" class="post error404">
-				
+
 				<?php
-		
+
     	            // action hook for the 404 content
     	            thematic_404(); ?>
     	            <br />Vielleicht suchten Sie aber auch nach einem dieser Artikel?<br /><br />
@@ -32,23 +32,23 @@
 				    	<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 				    <?php endforeach; ?>
 				    </ul>
-				    				
+
 				</div><!-- .post -->
-				
+
 				<?php thematic_belowpost(); ?>
-		
+
 			</div><!-- #content -->
-			
-			<?php thematic_belowcontent(); ?> 
-			
+
+			<?php thematic_belowcontent(); ?>
+
 		</div><!-- #container -->
-    
+
 <?php
 
     // action hook for placing content below #container
     thematic_belowcontainer();
 
-    // calling the standard sidebar 
+    // calling the standard sidebar
     thematic_sidebar();
 
     // calling footer.php

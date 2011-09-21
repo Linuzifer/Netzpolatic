@@ -32,14 +32,14 @@ function childtheme_override_postheader_postmeta() {
 	$postmeta .= thematic_postmeta_entrydate() . " | ";
 	$postmeta .= thematic_postfooter_postcomments();
 	$postmeta .= "</div><!-- .entry-meta -->\n";
-	return apply_filters('thematic_postheader_postmeta',$postmeta); 
+	return apply_filters('thematic_postheader_postmeta',$postmeta);
 }
 
 // Logos for Facebook and GooglePlus
 function childtheme_facebook_meta() { ?>
     <!-- Hey Facebook and Google plus! This is our logo: -->
      <link rel="image_src" href="https://www.netzpolitik.org/wp-content/themes/Netzpolatic/img/SNlogo.png" />
-<?php } 
+<?php }
 add_action('wp_head','childtheme_facebook_meta');
 
 // Change BlogTitle Display
@@ -52,7 +52,7 @@ add_action('thematic_header','childtheme_override_blogtitle',3); // There seems 
 // Page Title improvements
 function childtheme_override_page_title() {
 	global $post;
-	
+
 	$content = '';
 	if (is_attachment()) {
 			$content .= '<h2 class="page-title"><a href="';
@@ -168,7 +168,7 @@ function childtheme_Netzpolnavi() { ?>
 
 <?php }
 
-add_action('thematic_header','childtheme_Netzpolnavi', 5); 
+add_action('thematic_header','childtheme_Netzpolnavi', 5);
 
 // ADDITIONS FOR ADs
 
@@ -190,8 +190,8 @@ function childtheme_ads_pagewrapper_close() { ?>
 // skyscraper ad
 function childtheme_ads_skyscraper120x600() { ?>
 	<div class="ad" id="skyscraper">
-	<script> 
-	// <![CDATA[ 		
+	<script>
+	// <![CDATA[
 	document.write('<script src="https://ad.de.doubleclick.net/adj/netzpolitik.org/rotation;tile=2;sz=120x600;kw=netzpolitik;ord=' + ord + '?"><\/script>');
 	// ]]>
 	</script>
@@ -203,8 +203,8 @@ function childtheme_ads_skyscraper120x600() { ?>
 // superbanner ad
 function childtheme_ads_superbanner728x90() { ?>
 	<div class="ad" id="superbanner">
-	<script> 
-	// <![CDATA[ 		
+	<script>
+	// <![CDATA[
 	document.write('<script src="https://ad.de.doubleclick.net/adj/netzpolitik.org/rotation;dcopt=ist;tile=1;sz=728x90;kw=netzpolitik;ord=' + ord + '?"><\/script>');
 	// ]]>
 	</script>
@@ -216,8 +216,8 @@ function childtheme_ads_superbanner728x90() { ?>
 // medium rectangle ad
 function childtheme_ads_mediumrectangle300x250() { ?>
 	<div class="ad" id="mediumrectangle">Anzeige<br />
-	<script> 
-	// <![CDATA[ 		
+	<script>
+	// <![CDATA[
 	document.write('<script src="https://ad.de.doubleclick.net/adj/netzpolitik.org/rotation;tile=8;sz=300x250;kw=netzpolitik;ord=' + ord + '?"><\/script>');
 	// ]]>
 	</script>
@@ -256,7 +256,7 @@ switch(get_the_ID())
 	</noscript>
 	<!--/SZM-->
 <?php }
-add_action('thematic_header','childtheme_ads_ivwpixel', 1); 
+add_action('thematic_header','childtheme_ads_ivwpixel', 1);
 
 // Superbanner
 function childtheme_ads_SuBa() { ?>
@@ -264,28 +264,28 @@ function childtheme_ads_SuBa() { ?>
 		<div class="center">
 			<div class="ad" id="p1">
 				<div id="place_1">
-					<script> 
-						// <![CDATA[ 		
+					<script>
+						// <![CDATA[
 						document.write('<script src="https://ad.de.doubleclick.net/adj/netzpolitik.org/rotation;dcopt=ist;tile=1;sz=728x90;kw=netzpolitik;ord=' + ord + '?"><\/script>');
 					// ]]>
 					</script>
 					<noscript><a href="https://ad.de.doubleclick.net/jump/netzpolitik.org/rotation;tile=1;sz=728x90;kw=netzpolitik;ord=123456789?" rel="nofollow"><img src="https://ad.de.doubleclick.net/ad/netzpolitik.org/rotation;tile=1;sz=728x90;kw=netzpolitik;ord=123456789?" width="728" height="90" style="border:none;" alt="" /></a>
 					</noscript>
-		
+
 				</div>
 				<div id="p1_right">
 					<div id="place_2">
-						<script> 
-							// <![CDATA[ 		
+						<script>
+							// <![CDATA[
 							document.write('<script src="https://ad.de.doubleclick.net/adj/netzpolitik.org/rotation;tile=2;sz=120x600;kw=netzpolitik;ord=' + ord + '?"><\/script>');
 							// ]]>
 						</script>
 						<noscript><a href="https://ad.de.doubleclick.net/jump/netzpolitik.org/rotation;tile=2;sz=120x600;kw=netzpolitik;ord=123456789?" rel="nofollow"><img src="https://ad.de.doubleclick.net/ad/netzpolitik.org/rotation;tile=2;sz=120x600;kw=netzpolitik;ord=123456789?" width="120" height="600" style="border:none;" alt="" /></a>
 						</noscript>
-					</div> 
-				</div> 
+					</div>
+				</div>
 			</div>
-		</div> 
+		</div>
 	</div>
 	<script>
 		place_1 = document.getElementById("place_1");
@@ -300,7 +300,7 @@ function childtheme_ads_SuBa() { ?>
 <?php }
 
 function childtheme_cc_license() {?>
-	
+
 <?php }
 
 function childtheme_blogdescription() {
@@ -323,24 +323,24 @@ add_action('thematic_betweenmainasides','childtheme_ads_mediumrectangle300x250')
 /* Random Posts on 404's */
 function childtheme_override_404_content() { ?>
    			<?php thematic_postheader(); ?>
-   			
+
 				<div class="entry-content">
 					<p><?php _e('Apologies, but we were unable to find what you were looking for. Perhaps  searching will help.', 'thematic') ?></p>
 				</div><!-- .entry-content -->
-				
+
 				<form id="error404-searchform" method="get" action="<?php bloginfo('url') ?>/">
 					<div>
 						<input id="error404-s" name="s" type="text" value="<?php echo esc_html(stripslashes(get_query_var('s'))) ?>" size="40" />
 						<input id="error404-searchsubmit" name="searchsubmit" type="submit" value="<?php _e('Find', 'thematic') ?>" />
 					</div>
 				</form>
-<?php } 
+<?php }
 
 /* Schema.org */
 /* Schema.org author on single posts */
 function childtheme_override_postmeta_authorlink() {
 	    global $authordata;
-	
+
 	    $authorlink = '<span class="meta-prep meta-prep-author">' . __('By ', 'thematic') . '</span>';
 	    if (is_single()) {
 	    $authorlink .= '<span class="author vcard" itemprop="author">'. '<a rel="author" class="url fn n" href="';
@@ -351,7 +351,7 @@ function childtheme_override_postmeta_authorlink() {
 	    $authorlink .= '" title="' . __('View all posts by ', 'thematic') . get_the_author_meta( 'display_name' ) . '">';
 	    $authorlink .= get_the_author_meta( 'display_name' );
 	    $authorlink .= '</a></span>';
-	    
+
 	    return apply_filters('thematic_post_meta_authorlink', $authorlink);
 
 }
@@ -360,7 +360,7 @@ function childtheme_override_postmeta_authorlink() {
 function childtheme_override_postheader_posttitle() {
 	    if (is_single() || is_page()) {
 	        $posttitle = '<h1 itemprop="headline" class="entry-title">' . get_the_title() . "</h1>\n";
-	    } elseif (is_404()) {    
+	    } elseif (is_404()) {
 	        $posttitle = '<h1 class="entry-title">' . __('Not Found', 'thematic') . "</h1>\n";
 	    } else {
 	        $posttitle = '<h2 class="entry-title"><a href="';
@@ -368,12 +368,12 @@ function childtheme_override_postheader_posttitle() {
 	        $posttitle .= '" title="';
 	        $posttitle .= __('Permalink to ', 'thematic') . the_title_attribute('echo=0');
 	        $posttitle .= '" rel="bookmark">';
-	        $posttitle .= get_the_title();   
+	        $posttitle .= get_the_title();
 	        $posttitle .= "</a></h2>\n";
 	    }
-	    
-	    return apply_filters('thematic_postheader_posttitle',$posttitle); 
-	
+
+	    return apply_filters('thematic_postheader_posttitle',$posttitle);
+
 }
 
 /* Schema.org datePublished on single posts */
@@ -384,7 +384,7 @@ function childtheme_override_postmeta_entrydate() {
 	    } else {
 	    $entrydate .= '<span class="entry-date">' . get_the_time('d.m.Y') . ' um ' . get_the_time('G:i') . 'h' . '</span>';
 	    }
-	    
+
 	    return apply_filters('thematic_post_meta_entrydate', $entrydate);
 
 }
@@ -392,7 +392,7 @@ function childtheme_override_postmeta_entrydate() {
 /* Schema.org articleBody on single posts */
 function childtheme_override_single_post() {
 				thematic_abovepost(); ?>
-			
+
 				<div id="post-<?php the_ID();
 					echo '" ';
 					if (!(THEMATIC_COMPATIBLE_POST_CLASS)) {
@@ -430,7 +430,7 @@ function childtheme_override_postfooter_postcategory() {
 	        $postcategory .= __('Posted in ', 'thematic') . get_the_category_list(', ');
 	        $postcategory .= '</span> <span class="meta-sep meta-sep-tag-links">|</span>';
 	    }
-	    return apply_filters('thematic_postfooter_postcategory',$postcategory); 
+	    return apply_filters('thematic_postfooter_postcategory',$postcategory);
 }
 
 /* Schema.org Keywords (Tags) on single posts */
@@ -445,8 +445,8 @@ function childtheme_override_postfooter_posttags() {
 	        $tagtext = __('Tagged', 'thematic');
 	        $posttags = get_the_tag_list("<span class=\"tag-links\"> $tagtext ",', ','</span> <span class="meta-sep meta-sep-comments-link">|</span>');
 	    }
-	    return apply_filters('thematic_postfooter_posttags',$posttags); 
-	
+	    return apply_filters('thematic_postfooter_posttags',$posttags);
+
 }
 
 /* Schema.org publisher on single posts */
@@ -473,7 +473,7 @@ function childtheme_override_postfooter_postconnect() {
 	    if (current_user_can('edit_posts')) {
 	        $postconnect .= ' ' . thematic_postfooter_posteditlink();
 	    }
-	    return apply_filters('thematic_postfooter_postconnect',$postconnect); 
+	    return apply_filters('thematic_postfooter_postconnect',$postconnect);
 
 }
 
@@ -514,12 +514,12 @@ function buttons() { ?>
 }
 
 function childtheme_override_postfooter() {
-    
+
     global $id, $post;
-    
+
     if ($post->post_type == 'page' && current_user_can('edit_posts')) { /* For logged-in "page" search results */
         $postfooter = '<div class="entry-utility">' . buttons() . thematic_postfooter_posteditlink();
-        $postfooter .= "</div><!-- .entry-utility -->\n";    
+        $postfooter .= "</div><!-- .entry-utility -->\n";
     } elseif ($post->post_type == 'page') { /* For logged-out "page" search results */
         $postfooter = buttons();
     } else {
@@ -528,9 +528,9 @@ function childtheme_override_postfooter() {
         } else {
             $postfooter = '<div class="entry-utility">' . buttons() . thematic_postfooter_postcategory() . thematic_postfooter_posttags() . thematic_postfooter_postcomments();
         }
-        $postfooter .= "</div><!-- .entry-utility -->\n";    
+        $postfooter .= "</div><!-- .entry-utility -->\n";
     }
-    
+
     // Put it on the screen
     echo apply_filters( 'thematic_postfooter', $postfooter ); // Filter to override default post footer
 }
