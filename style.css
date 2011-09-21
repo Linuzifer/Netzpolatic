@@ -60,12 +60,17 @@ ol, ul, p {
 	margin-top: 1.5em;
 }
 
-i {
+i, em {
 	font-style: italic;
 }
 
-b {
+b, strong {
 	font-style: bold;
+}
+
+small {
+	font-size: 0.75em;
+	line-height: 1.33;
 }
 
 
