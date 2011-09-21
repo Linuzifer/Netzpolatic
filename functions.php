@@ -161,7 +161,7 @@ function childtheme_Netzpolnavi() { ?>
 			<li><a href="https://www.facebook.com/netzpolitik" class="np_navpunkt">Facebook</a></li>
 			<li><a href="https://www.youtube.com/user/netzpolitik" class="np_navpunkt">Youtube</a></li>
 			<li><a href="https://www.twitter.com/Netzpolitik" class="np_navpunkt">Twitter</a></li>
-			<li><a href="/feed/" class="np_navpunkt">RSS</a></li>
+			<li><a href="/feed/atom/" class="np_navpunkt">Feed</a></li>
 		</ul>
 		<img id="zeitlogo" src="<?php echo bloginfo('stylesheet_directory') ?>/img/zeitkoop.png" alt="Vermarktet von ZEIT ONLINE" height="20" width="100">
 	</div>
