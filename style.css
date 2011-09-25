@@ -64,8 +64,7 @@ i, em {
 	font-style: italic;
 }
 
-b,
-1strong,
+b, strong,
 .unapproved {
 	font-style: bold;
 }
