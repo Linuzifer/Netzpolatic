@@ -102,6 +102,13 @@ small,
 }
 
 
+/* ATTRIBUTES */
+
+img[width=1],
+img[height=1] {
+	position: absolute;
+}
+
 /* LINKS */
 
 a {
