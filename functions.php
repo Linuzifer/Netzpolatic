@@ -248,11 +248,11 @@ switch(get_the_ID())
 	<script>
 		<!--
 		var IVW="<?php echo $ivwurl;?>";
-		document.write('<img src="' + IVW + '?r=' + escape(document.referrer) + '&d=' + (Math.random()*100000) + '" width="1" height="1" border="0" alt="szmtag"/>');
+		document.write('<img src="' + IVW + '?r=' + escape(document.referrer) + '&d=' + (Math.random()*100000) + '" width="1" height="1" border="0" alt=""/>');
 		//-->
 	</script>
 	<noscript>
-		<img src="https://zeitonl.ivwbox.de/cgi-bin/ivw/CP/netzpolitik" width="1" height="1" border="0" alt="szmtag" />
+		<img src="https://zeitonl.ivwbox.de/cgi-bin/ivw/CP/netzpolitik" width="1" height="1" border="0" alt="" />
 	</noscript>
 	<!--/SZM-->
 <?php }
