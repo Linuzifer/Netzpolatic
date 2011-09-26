@@ -1,0 +1,287 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+       "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+
+<head>
+<style>
+
+body 	{
+	
+	margin:   	0;        
+	padding:  	0;        
+	}
+
+</style>
+
+</head>
+<body>
+<div id='test'></div>
+<div style="width:300px;"><style>
+
+
+.rotatefield
+{
+   width:300px;
+   height:230px;
+    overflow:hidden;
+    border:0px solid black;
+    float:left;
+    
+    position:absolute;
+       z-index:0;
+       left:0px;
+}
+
+
+.rotatenavigationIcons
+{
+   float:left;
+   height:230px;
+   overflow:hidden;
+   width:0px;
+   background: url('csscarousel_selectBackground.png') no-repeat;
+   padding-top:0px;
+   
+  margin-left:300px;
+   /*position:absolute;*/
+   
+   
+}
+
+.rotatebox
+{
+   width:2100px;
+   height:230px;
+   
+}
+
+.rotatenavigationleft, .rotatenavigationright
+{
+   height:230px;
+   overflow:hidden;
+   width:17px;
+   padding-top:0px;
+   border:0px solid green;
+
+   display:inline;
+   background-repeat:no-repeat;   
+   background-position:0px 50%;
+   position: relative;
+   z-index:1;
+}
+
+.rotatenavigationleftarrow,.rotatenavigationrightarrow
+{
+   height:214px;
+     overflow:hidden;
+     width:17px;
+     padding-top:0px;
+     border:0px solid green;
+
+     margin:0px;
+     background-repeat:no-repeat;   
+     background-position:0px 50%;
+     
+     filter:alpha(opacity=50);
+     -moz-opacity:0.5;
+     -khtml-opacity: 0.5;
+     opacity: 0.5;
+     background-color:#048fc9;     
+}
+
+.rotatenavigationleftarrow
+{
+
+   background-image:url(slider_scrollleftclear.png);
+   float:left;
+   background-position:1px 50%;
+   
+}
+
+.rotatenavigationrightarrow
+{
+
+   background-image:url(slider_scrollrightclear.png);
+
+   float:right;
+   background-position:0px 50%;
+   
+   
+}
+
+
+.rotatenavigationleft
+{
+      left:0px;
+   float:left;
+
+
+}
+
+.rotatenavigationright
+{
+   right:0px;
+   float:right;
+ 
+}
+
+.rotatenavigationcornerleftup, .rotatenavigationcornerrightup, .rotatenavigationcornerleftdown, .rotatenavigationcornerrightdown
+{
+   height:8px;
+   overflow:hidden;
+   width:17px;
+   padding-top:0px;
+   border:0px solid green;
+   /*background:#000495;*/
+   display:inline;
+   background-repeat:no-repeat;   
+   background-position:0px 0px;
+   float:left;
+   z-index:1;
+   
+   
+   
+   filter:alpha(opacity=50);
+   -moz-opacity:0.5;
+   -khtml-opacity: 0.5;
+   opacity: 0.5;
+   background-color:#048fc9;     
+   
+
+   
+}
+
+.rotatenavigationcornerleftup
+{
+   right:0px;
+   background-image:url(slider_corner1white.png);
+}
+
+.rotatenavigationcornerrightup
+{
+   right:0px;
+   background-position:100% 0px;
+   background-image:url(slider_corner2white.png);
+}
+
+.rotatenavigationcornerrightdown
+{
+   right:0px;
+   bottom:0px;
+   background-position:100% 100%;
+   background-image:url(slider_corner3white.png);
+}
+
+.rotatenavigationcornerleftdown
+{
+   left:0px;
+   bottom:0px;
+   background-position:0px 100%;
+   background-image:url(slider_corner4white.png);
+}
+.carousel
+{
+   width:300px;
+   border:0px solid orange;
+   height:230px;
+   padding:0px;
+   margin:0px;
+   background:white;
+   float:left;
+   /*display:block;*/
+   
+   position:relative;
+}
+
+.rotatebutton
+{
+   margin-left:2px;
+}
+</style>
+
+
+
+<script type="text/javascript" src="carouselv2.js"></script><!-- sollte in den header-->
+
+<script language='JavaScript'>
+
+if (carouseldef == null)
+{
+   var carouseldef = true;
+   var rotateboxtarget = new Array();
+   var rotateboxspeed = new Array();
+   var rotateboxpausedauer = new Array();
+   var rotateboxbildergeladen = new Array();
+   var carousels = new Array();
+
+}
+carousels.push(1);
+
+//setTimeout('setUpCarousel(0)',1000);
+
+
+
+//setTimeout("loadimgs(0);",3000);
+
+window.onload = function()
+{
+   for(iiii=0;iiii<carousels.length;iiii++)
+   {
+      carouselid = carousels[iiii];
+      setUpCarousel(carouselid);
+      loadimgs(carouselid);
+   }
+   
+   
+   
+   
+}
+
+</script>
+
+
+
+
+      <div class='carousel' id='carousel1' anzeigeelemente='1' carousel_speed='3000' carousel_gesamtelemente='7'>
+         <div class='rotatefield' name='rotatefield'>
+            <div name='rotatebox' style='' class='rotatebox'>
+
+               
+                           <div name=rotatebox0  style='margin:0px;padding:0px;float:left;width:300px;height:230px;background-image:url();background-repeat:no-repeat; background-position:0px 0px;border:0px solid green;background-image:url(Not_Available_Poster.jpg);' imageurl='Not_Available_Poster.jpg'><a target="_blank" href='http://www.getDigital.de/products/Copyright_Poster/her/netzpolitik' alt='Copyright Poster' title='Copyright Poster' ><img  src='Not_Available_Poster.jpg' border='0' width='300' height='230' /></a>
+                           </div>
+
+                           <div name=rotatebox1  style='margin:0px;padding:0px;float:left;width:300px;height:230px;background-image:url();background-repeat:no-repeat; background-position:0px 0px;border:0px solid green;background-image:url(zero.png);' imageurl='ComputerfensterMitLupe.jpg'><a target="_blank" href='http://www.getDigital.de/products/Computerfenster_Wandaufkleber/her/netzpolitik' alt='Computerfenster Aufkleber' title='Computerfenster Aufkleber' ><img  src='zero.png' border='0' width='300' height='230' /></a>
+                           </div>
+                           <div name=rotatebox2  style='margin:0px;padding:0px;float:left;width:300px;height:230px;background-image:url();background-repeat:no-repeat; background-position:0px 0px;border:0px solid green;background-image:url(zero.png);' imageurl='icanbegoogled.jpg'><a target="_blank" href='http://www.getDigital.de/products/I_can_be_googled/her/netzpolitik' alt='I can be googled Shirt' title='I can be googled Shirt' ><img  src='zero.png' border='0' width='300' height='230' /></a>
+                           </div>
+                           <div name=rotatebox3  style='margin:0px;padding:0px;float:left;width:300px;height:230px;background-image:url();background-repeat:no-repeat; background-position:0px 0px;border:0px solid green;background-image:url(zero.png);' imageurl='magnetpuzzlegold-view4.jpg'><a target="_blank" href='http://www.getDigital.de/products/Magnetpuzzle/her/netzpolitik' alt='Magnetpuzzle' title='Magnetpuzzle' ><img  src='zero.png' border='0' width='300' height='230' /></a>
+                           </div>
+                           <div name=rotatebox4  style='margin:0px;padding:0px;float:left;width:300px;height:230px;background-image:url();background-repeat:no-repeat; background-position:0px 0px;border:0px solid green;background-image:url(zero.png);' imageurl='UnbeschrifteteTastatur.jpg'><a target="_blank" href='http://www.getDigital.de/products/Blank_Keyboard/her/netzpolitik' alt='Unbeschrift. Tastatur' title='Unbeschrift. Tastatur' ><img  src='zero.png' border='0' width='300' height='230' /></a>
+                           </div>
+                           <div name=rotatebox5  style='margin:0px;padding:0px;float:left;width:300px;height:230px;background-image:url();background-repeat:no-repeat; background-position:0px 0px;border:0px solid green;background-image:url(zero.png);' imageurl='thinking.jpg'><a target="_blank" href='http://www.getDigital.de/products/Thinking/her/netzpolitik' alt='Thinking Shirt' title='Thinking Shirt' ><img  src='zero.png' border='0' width='300' height='230' /></a>
+
+                           </div>
+                           <div name=rotatebox6  style='margin:0px;padding:0px;float:left;width:300px;height:230px;background-image:url();background-repeat:no-repeat; background-position:0px 0px;border:0px solid green;background-image:url(zero.png);' imageurl='turningitoffandon.jpg'><a target="_blank" href='http://www.getDigital.de/products/Turning_it_off_and_on_again/her/netzpolitik' alt='IT Admin Shirts' title='IT Admin Shirts' ><img  src='zero.png' border='0' width='300' height='230' /></a>
+                           </div>
+                           <div name=rotatebox7  style='margin:0px;padding:0px;float:left;width:300px;height:230px;background-image:url();background-repeat:no-repeat; background-position:0px 0px;border:0px solid green;background-image:url(zero.png);' imageurl='Not_Available_Poster.jpg'><a target="_blank" href='http://www.getDigital.de/products/Copyright_Poster/her/netzpolitik' alt='Copyright Poster' title='Copyright Poster' ><img  src='zero.png' border='0' width='300' height='230' /></a>
+                           </div>
+             </div>      
+         </div>
+         <div class='rotatenavigationleft' onclick='JavaScript:carouselSlideLeft(1)'>
+                  <div class='rotatenavigationcornerleftup' name=''></div>
+
+                  <div class='rotatenavigationleftarrow' name=''></div>
+                  <div class='rotatenavigationcornerleftdown' name=''></div>
+                  </div>
+                  
+            <div class='rotatenavigationright' onclick='JavaScript:carouselSlideRight(1)'>
+               <div class='rotatenavigationcornerrightup'></div>
+               <div class='rotatenavigationrightarrow' name=''></div>
+               <div class='rotatenavigationcornerrightdown'></div>
+               </div>         
+      </div>
+
+<div align="center"><div style="clear:left; font-family: Verdana,Tahoma,Geneva,Verdana,sans-serif; font-size:11px;width:280px;"><a target="_blank" href="http://www.getDigital.de/index/start/her/netzpolitik"><img src="minilogo.png" width="60" height="20" border="0" style="float:left; margin-right:4px;margin-top:5px;margin-left:3px;"></a><div style="white-space:nowrap;">Noch mehr ausgefallene Gadgets f&uuml;r<br>Technikfans gibt es bei <a target="_blank" href="http://www.getDigital.de/index/start/her/netzpolitik">getDigital.de</a></div></div>
+</div>
+</body></html>
