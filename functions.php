@@ -38,7 +38,7 @@ function childtheme_override_postheader_postmeta() {
 // Logos for Facebook and GooglePlus
 function childtheme_facebook_meta() { ?>
 	<!-- Hey Facebook and Google plus! This is our logo: -->
-	<link rel="image_src" href="https://www.netzpolitik.org/wp-content/themes/Netzpolatic/img/SNlogo.png" />
+	<link rel="image_src" href="//www.netzpolitik.org/wp-content/themes/Netzpolatic/img/SNlogo.png" />
 <?php }
 add_action('wp_head','childtheme_facebook_meta');
 
